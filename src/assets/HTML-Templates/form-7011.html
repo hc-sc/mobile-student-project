@@ -1,0 +1,362 @@
+<!--<div id="fullHeader">
+  <progress id="progress-bar" min="1" max="100" value="0"></progress>
+  <div id="ballHeader"></div>
+  <div id="navTitle"></div>
+</div>
+
+<div class="pageHeading">
+  <h1>Voluntary Incident Report</h1>
+</div>-->
+
+<form id="7011" role="form">
+  <!--TODO: Restructure-->
+  <div id="page-form-1" class="form-page">
+
+    <div class="form-group" id="2">
+      <label>Type of Incident Reported</label>
+
+      <button type="button" id="btnAnimal" class="btn btn-success btn-incident" value="1">
+        <img src="assets/images/animal-icon.svg" alt="Animal - LE Animal" class="img-rounded pull-left" />
+        <p class="btn-incident-text">Animal</p>
+      </button>
+      <button type="button" id="btnEnvironment" class="btn btn-success btn-incident" value="2">
+        <img src="assets/images/environment-icon.svg" alt="Environment - LE Environment" class="img-rounded pull-left" />
+        <p class="btn-incident-text">Environment</p>
+      </button>
+      <button type="button" id="btnHuman" class="btn btn-success btn-incident" value="3">
+        <img src="assets/images/human-icon.svg" alt="Human - LE Human" class="img-rounded pull-left" />
+        <p class="btn-incident-text">Human</p>
+      </button>
+    </div>
+  </div>
+
+  <div id="page-form-2" class="form-page">
+    <div class="form-group" id="5">
+      <label for="5">Who is reporting this incident?</label>
+      <select name="5" class="form-control" id="select-5" required>
+        <option value="" disabled>------</option>
+      </select>
+    </div>
+    <div class="form-group" id="5a">
+      <label for="5"> Other reporter Type</label>
+      <input class="form-control" type="text" name="5a" size="200" required>
+      <div class="my-error-tip"></div>
+    </div>
+    <div class="form-group" id="3">
+      <label for="3">City/ Municipality </label>
+      <input class="form-control" type="text" name="3" size="100" required>
+      <div class="my-error-tip"></div>
+    </div>
+    <div class="form-group" id="4">
+      <label for="subdivision">Province</label>
+      <select data-role="subdivision" class="form-control" id="select-4">
+        <option value="" disabled>------</option>
+      </select>
+    </div>
+    <div class="form-group" id="10">
+      <label for="10">Date incident occurred </label>
+      <!--<input class="form-control" type="date" name="10" size="10" required>-->
+      <div class="input-group date" data-provide="datepicker">
+        <input type="text" class="form-control" data-date-format="YYYY-MM-DD" name="10" required>
+        <div class="input-group-addon">
+          <span class="glyphicon glyphicon-th"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="navFooter">
+      <button type="button" class="btn btn-success btn-nav-prev">Prev</button>
+      <button type="button" id="navNext" class="btn btn-success btn-nav-next">Next</button>
+    </div>
+
+  </div>
+
+  <div id="page-form-3" class="form-page">
+
+    <div class="form-group">
+      <div id="profileSwitch" class="text-center">
+        <label for="toggleProfile">Use saved profile?</label>
+        <input type="checkbox" id="toggleProfile" name="toggleProfile"
+               data-toggle="toggle" data-onstyle="success">
+      </div>
+    </div>
+
+    <div class="form-group" id="_10">
+      <label for="_10">First Name</label>
+      <input data-profile="firstName" class="form-control" type="text" name="_10" size="200" required>
+      <div class="my-error-tip"></div>
+    </div>
+    <div class="form-group" id="_11">
+      <label for="_11">Last Name</label>
+      <input data-profile="lastName" class="form-control" type="text" name="_11" size="200" required>
+      <div class="my-error-tip"></div>
+    </div>
+    <div class="form-group" id="_12">
+      <label for="_12">Address</label>
+      <input data-profile="address" class="form-control" type="text" name="_12" size="500">
+      <div class="my-error-tip"></div>
+    </div>
+    <div class="form-group" id="_13">
+      <label for="_13">City</label>
+      <input data-profile="city" class="form-control" type="text" name="_13" size="100">
+      <div class="my-error-tip"></div>
+    </div>
+    <div class="form-group" id="_14">
+      <label for="_14">Country</label>
+      <select data-profile="country" data-role="country" class="form-control" name="_14" id="select-_14" required>
+        <option value="" disabled>------</option>
+      </select>
+    </div>
+    <div class="form-group" id="_15">
+      <label for="subdivision">Province/State</label>
+      <select data-profile="subdivision" class="form-control" name="_15" id="select-_15">
+        <option value="" disabled>------</option>
+      </select>
+    </div>
+    <div class="form-group" id="_16">
+      <label for="_16">Postal Code/Zip</label>
+      <input data-profile="postal" class="form-control" type="text" name="_16" size="10">
+      <div class="my-error-tip"></div>
+    </div>
+    <div class="form-group" id="_17">
+      <label for="_17">Telephone</label>
+      <input data-profile="phone" class="form-control" type="tel" name="_17" size="20" required>
+      <div class="my-error-tip"></div>
+    </div>
+    <div class="form-group" id="_18">
+      <label for="_18">Email Address</label>
+      <input data-profile="email" class="form-control" type="email" name="_18" size="200" required>
+      <div class="my-error-tip"></div>
+    </div>
+
+    <div class="navFooter">
+      <button type="button" class="btn btn-success btn-nav-prev">Prev</button>
+      <button type="button" id="navNext" class="btn btn-success btn-nav-next">Next</button>
+    </div>
+
+  </div>
+
+  <div id="page-form-3a" class="form-page">
+
+    <div class="form-group" id="13">
+      <label for="13">Type of animal affected(choose one per form)</label>
+      <select class="form-control" name="13" id="select-13">
+        <option value="" disabled>------</option>
+      </select>
+    </div>
+    <div class="form-group" id="14">
+      <label for="14">Number of animals</label>
+      <input class="form-control" type="text" name="10" size="6">
+      <div class="my-error-tip"></div>
+    </div>
+    <div class="form-group" id="16">
+      <label for="16">Describe all the symptoms (in details)</label>
+      <textarea class="form-control" name="16" rows="4" cols="50" form="7011" size="4000"></textarea>
+      <div class="my-error-tip"></div>
+    </div>
+
+    <div class="navFooter">
+      <button type="button" class="btn btn-success btn-nav-prev">Prev</button>
+      <button type="button" id="navNext" class="btn btn-success btn-nav-next">Next</button>
+    </div>
+
+  </div>
+
+  <div id="page-form-3b" class="form-page">
+
+    <div class="form-group" id="11">
+      <label for="10">Age</label>
+      <input class="form-control" type="text" name="10" size="3">
+      <div class="my-error-tip"></div>
+    </div>
+    <div class="form-group" id="12">
+      <label for="12">Gender</label>
+      <div class="btn-group btn-group-justified" role="group" name="12">
+
+      </div>
+    </div>
+    <div class="form-group" id="16">
+      <label for="16">Describe all the symptoms (in details)</label>
+      <textarea class="form-control" name="16" rows="4" cols="50" form="7011" size="4000"></textarea>
+      <div class="my-error-tip"></div>
+    </div>
+
+    <div class="navFooter">
+      <button type="button" class="btn btn-success btn-nav-prev">Prev</button>
+      <button type="button" id="navNext" class="btn btn-success btn-nav-next">Next</button>
+    </div>
+
+  </div>
+
+  <div id="page-form-3c" class="form-page">
+
+    <div class="form-group" id="15">
+      <label for="15">Number of plants affected (estimate)</label>
+      <input class="form-control" type="text" name="15" size="6">
+      <div class="my-error-tip"></div>
+    </div>
+    <div class="form-group" id="16">
+      <label for="16">Describe all the symptoms (in details)</label>
+      <textarea class="form-control" rows="4" cols="50" name="16" form="7011" size="4000"></textarea>
+      <div class="my-error-tip"></div>
+    </div>
+    <div class="navFooter">
+      <button type="button" class="btn btn-success btn-nav-prev">Prev</button>
+      <button type="button" id="navNext" class="btn btn-success btn-nav-next">Next</button>
+    </div>
+
+  </div>
+
+  <div id="page-form-4a" class="form-page">
+
+    <div class="form-group" id="17a">
+      <label for="17">Where was/were the animal(s) found?</label>
+      <select class="form-control" name="17" id="select-17">
+        <option value="" disabled>------</option>
+      </select>
+    </div>
+    <div class="form-group" id="19">
+      <label for="19">What was exposed</label>
+      <select class="form-control" name="19" id="select-19">
+        <option value="" disabled>------</option>
+      </select>
+    </div>
+    <div class="form-group" id="16">
+      <label for="16">Describe the incident (in details)</label>
+      <textarea class="form-control" rows="4" cols="50" name="16" form="7011" size="4000"></textarea>
+      <div class="my-error-tip"></div>
+    </div>
+    <div class="form-group" id="20">
+      <label for="20">Has this incident been reported to the manufacturer?</label>
+      <div class="btn-group btn-group-justified" role="group" name="20">
+
+      </div>
+    </div>
+    <div class="form-group" id="21">
+      <label for="10">Date incident reported to manufacturer</label>
+      <input class="form-control" type="date" name="10" size="10">
+      <div class="my-error-tip"></div>
+    </div>
+    <div class="navFooter">
+      <button type="button" class="btn btn-success btn-nav-prev">Prev</button>
+      <button type="button" id="navNext" class="btn btn-success btn-nav-next">Next</button>
+    </div>
+
+  </div>
+
+  <div id="page-form-4b" class="form-page">
+
+    <div class="form-group" id="17b">
+      <label for="17">Where was/were the plants(s) found?</label>
+      <select class="form-control" name="17" id="select-17">
+        <option value="" disabled>------</option>
+      </select>
+    </div>
+    <div class="form-group" id="16">
+      <label for="16">Describe the incident (in details)</label>
+      <textarea class="form-control" rows="4" cols="50" name="16" form="7011" size="4000"></textarea>
+      <div class="my-error-tip"></div>
+    </div>
+    <div class="form-group" id="20">
+      <label for="20">Has this incident been reported to the manufacturer?</label>
+      <div class="btn-group btn-group-justified" role="group" name="20">
+
+      </div>
+    </div>
+    <div class="form-group" id="21">
+      <label for="10">Date incident reported to manufacturer</label>
+      <input class="form-control" type="date" name="10" size="10">
+      <div class="my-error-tip"></div>
+    </div>
+    <div class="navFooter">
+      <button type="button" class="btn btn-success btn-nav-prev">Prev</button>
+      <button type="button" id="navNext" class="btn btn-success btn-nav-next">Next</button>
+    </div>
+
+  </div>
+
+  <div id="page-form-4c" class="form-page">
+
+    <div class="form-group" id="19">
+      <label for="19">What was exposed</label>
+      <select class="form-control" name="19" id="select-19">
+        <option value="" disabled>------</option>
+      </select>
+    </div>
+    <div class="form-group" id="16">
+      <label for="16">Describe the incident (in details)</label>
+      <textarea class="form-control" rows="4" cols="50" name="16" form="7011" size="4000"></textarea>
+      <div class="my-error-tip"></div>
+    </div>
+    <div class="form-group" id="20">
+      <label for="20">Has this incident been reported to the manufacturer?</label>
+      <div class="btn-group btn-group-justified" role="group" name="20">
+
+      </div>
+    </div>
+    <div class="form-group" id="21">
+      <label for="21">Date incident reported to manufacturer</label>
+      <input class="form-control" type="date" name="21" size="10">
+      <div class="my-error-tip"></div>
+    </div>
+    <div class="navFooter">
+      <button type="button" class="btn btn-success btn-nav-prev">Prev</button>
+      <button type="button" id="navNext" class="btn btn-success btn-nav-next">Next</button>
+    </div>
+
+  </div>
+
+  <div id="page-form-5" class="form-page">
+
+    <div class="form-group" id="6">
+      <label for="6">Product Name</label>
+      <input class="form-control" type="text" name="6" size="500">
+      <div class="my-error-tip"></div>
+    </div>
+    <div class="form-group" id="7">
+      <label for="7">Active Ingredient</label>
+      <input class="form-control" type="text" name="7" size="500">
+      <div class="my-error-tip"></div>
+    </div>
+    <div class="form-group" id="8">
+      <label for="8">Registration Number</label>
+      <input class="form-control" type="number" name="8" size="20" required>
+      <div class="my-error-tip"></div>
+    </div>
+    <div class="form-group" id="9">
+      <label for="9">Manufacturer's Name</label>
+      <input class="form-control" type="text" name="9" size="500">
+      <div class="my-error-tip"></div>
+    </div>
+    <div class="navFooter">
+      <button type="button" class="btn btn-success btn-nav-prev">Prev</button>
+      <button type="button" id="navNext" class="btn btn-success btn-nav-next">Next</button>
+    </div>
+
+  </div>
+
+  <div id="page-form-6" class="form-page">
+
+    <div id="imageAttachments" class="container-fluid">
+    </div>
+    <div class="form-group">
+      <button id="btnAttach" type="button" class="btn btn-success">Attachments</button>
+      <!--<button id="22" class="btn btn-success">Add more Attachments</button>-->
+    </div>
+    <div class="form-group" id="24">
+      <label for="24">I have read, understood and agree with</label>
+      <!--<button type="button" class="btn" id="btnShowPrivacy">Privacy Notice Statement </button>-->
+      <input class="form-control" type="checkbox" name="24" required>
+      <div class="my-error-tip"></div>
+    </div>
+    <div class="form-group">
+      <button type="button" id="btnSubmitForm" class="btn btn-success btn-submit">Submit</button>
+    </div>
+    <div class="navFooter">
+      <button type="button" class="btn btn-success btn-nav-prev">Prev</button>
+      <button type="button" id="navNext" class="btn btn-success btn-nav-next">Next</button>
+    </div>
+
+  </div>
+
+</form>

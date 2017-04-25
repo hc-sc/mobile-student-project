@@ -1,0 +1,463 @@
+/* @@pkg.version */
+@base-font: Lato, sans-serif;
+@font-size: 16px;
+@secondary-font: OxygenBold, sans-serif;
+@base-colour: rgba(51,80,117,1.00);
+@secondary-colour: rgba(34,34,34,1.00);
+@offset-colour: rgba(255,255,255,1.00);
+@border-bottom: 1px dotted rgba(204,204,204,1.00);
+.gradient (@startColor: rgba(51,80,117,1.00) 0%, @endColor: rgba(34,53,77,1.00) 100%) {
+ background-color: @startColor;
+ background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+ background: -webkit-linear-gradient(top, @startColor, @endColor);
+ background: -moz-linear-gradient(top, @startColor, @endColor);
+ background: -ms-linear-gradient(top, @startColor, @endColor);
+ background: -o-linear-gradient(top, @startColor, @endColor);
+}
+ 
+@screen-xs: 480px;
+@screen-xs-min: @screen-xs;
+@screen-phone: @screen-xs-min; 
+@screen-sm: 768px;
+@screen-sm-min: @screen-sm;
+@screen-tablet: @screen-sm-min; 
+@screen-md: 992px;
+@screen-md-min: @screen-md;
+@screen-desktop: @screen-md-min; 
+@screen-lg: 1200px;
+@screen-lg-min: @screen-lg;
+@screen-lg-desktop: @screen-lg-min; 
+@screen-xs-max: (@screen-sm-min - 1);
+@screen-sm-max: (@screen-md-min - 1);
+@screen-md-max: (@screen-lg-min - 1);
+
+@font-face {
+ font-family: 'Lato';
+ src: url('../fonts/lato-regular-webfont.eot');
+ src: url('../fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'), 
+      url('../fonts/lato-regular-webfont.woff2') format('woff2'),
+      url('../fonts/lato-regular-webfont.woff') format('woff'), 
+      url('../fonts/lato-regular-webfont.ttf') format('truetype'), 
+      url('../fonts/lato-regular-webfont.svg#latoregular') format('svg');
+ font-weight: normal;
+ font-style: normal
+}
+@font-face {
+ font-family: 'Lato';
+ src: url('../fonts/lato-italic-webfont.eot');
+ src: url('../fonts/lato-italic-webfont.eot?#iefix') format('embedded-opentype'), 
+      url('../fonts/lato-italic-webfont.woff2') format('woff2'),
+      url('../fonts/lato-italic-webfont.woff') format('woff'), 
+      url('../fonts/lato-italic-webfont.ttf') format('truetype'), 
+      url('../fonts/lato-italic-webfont.svg#latoitalic') format('svg');
+ font-weight: normal;
+ font-style: italic
+}
+@font-face {
+ font-family: 'Lato';
+ src: url('../fonts/lato-bold-webfont.eot');
+ src: url('../fonts/lato-bold-webfont.eot?#iefix') format('embedded-opentype'), 
+      url('../fonts/lato-bold-webfont.woff2') format('woff2'),
+      url('../fonts/lato-bold-webfont.woff') format('woff'), 
+      url('../fonts/lato-bold-webfont.ttf') format('truetype'), 
+      url('../fonts/lato-bold-webfont.svg#latobold') format('svg');
+ font-weight: bold;
+ font-style: normal
+}
+@font-face {
+ font-family: 'Lato';
+ src: url('../fonts/lato-bolditalic-webfont.eot');
+ src: url('../fonts/lato-bolditalic-webfont.eot?#iefix') format('embedded-opentype'), 
+      url('../fonts/lato-bolditalic-webfont.woff2') format('woff2'), 
+      url('../fonts/lato-bolditalic-webfont.woff') format('woff'), 
+      url('../fonts/lato-bolditalic-webfont.ttf') format('truetype'), 
+      url('../fonts/lato-bolditalic-webfont.svg#latobold_italic') format('svg');
+ font-weight: bold;
+ font-style: italic
+}
+@font-face {
+ font-family: 'LatoBlack';
+ src: url('../fonts/lato-black-webfont.eot');
+ src: url('../fonts/lato-black-webfont.eot?#iefix') format('embedded-opentype'), 
+      url('../fonts/lato-black-webfont.woff2') format('woff2'),
+      url('../fonts/lato-black-webfont.woff') format('woff'), 
+      url('../fonts/lato-black-webfont.ttf') format('truetype'), 
+      url('../fonts/lato-black-webfont.svg#latoblack') format('svg');
+ font-weight: bolder;
+ font-style: normal
+}
+@font-face {
+ font-family: 'LatoBlack';
+ src: url('../fonts/lato-blackitalic-webfont.eot');
+ src: url('../fonts/lato-blackitalic-webfont.eot?#iefix') format('embedded-opentype'), 
+      url('../fonts/lato-blackitalic-webfont.woff2') format('woff2'),
+      url('../fonts/lato-blackitalic-webfont.woff') format('woff'), 
+      url('../fonts/lato-blackitalic-webfont.ttf') format('truetype'), 
+      url('../fonts/lato-blackitalic-webfont.svg#latoblack_italic') format('svg');
+ font-weight: bolder;
+ font-style: italic
+}
+@font-face {
+ font-family: 'LatoLight';
+ src: url('../fonts/lato-light-webfont.eot');
+ src: url('../fonts/lato-light-webfont.eot?#iefix') format('embedded-opentype'), 
+      url('../fonts/lato-light-webfont.woff2') format('woff2'),
+      url('../fonts/lato-light-webfont.woff') format('woff'), 
+      url('../fonts/lato-light-webfont.ttf') format('truetype'), 
+      url('../fonts/lato-light-webfont.svg#latolight') format('svg');
+ font-weight: 100;
+ font-style: normal
+}
+@font-face {
+ font-family: 'LatoLight';
+ src: url('../fonts/lato-lightitalic-webfont.eot');
+ src: url('../fonts/lato-lightitalic-webfont.eot?#iefix') format('embedded-opentype'), 
+      url('../fonts/lato-lightitalic-webfont.woff2') format('woff2'), 
+      url('../fonts/lato-lightitalic-webfont.woff') format('woff'), 
+      url('../fonts/lato-lightitalic-webfont.ttf') format('truetype'), 
+      url('../fonts/lato-lightitalic-webfont.svg#latolight_italic') format('svg');
+ font-weight: 100;
+ font-style: italic
+}
+@font-face {
+ font-family: 'OxygenBold';
+ src: url('../fonts/oxygen-bold-webfont.eot');
+ src: url('../fonts/oxygen-bold-webfont.eot?#iefix') format('embedded-opentype'), 
+      url('../fonts/oxygen-bold-webfont.woff2') format('woff2'),
+      url('../fonts/oxygen-bold-webfont.woff') format('woff'), 
+      url('../fonts/oxygen-bold-webfont.ttf') format('truetype'), 
+      url('../fonts/oxygen-bold-webfont.svg#oxygenbold') format('svg');
+ font-weight: 700;
+ font-style: normal
+}
+
+html {
+ position: relative;
+ min-height: 100%;
+}
+body {
+ font-family: @base-font;
+ font-size: @font-size;
+ margin-bottom: 51px;
+}
+input, select, textarea, .input-group .form-control  {
+ font-size: @font-size !important;
+}
+#met-tphp {
+ list-style-type: none;
+ margin-bottom: 0; 
+}
+.met-slc {
+ left: 0;
+ position: absolute;
+ text-align: center;
+ top: 10px;
+ width: 100%;
+ z-index: 3;
+}
+.met-sl {
+ padding: 5px;
+ z-index: 501; 
+ clip: rect(1px, 1px, 1px, 1px);
+ height: 1px;
+ margin: 0;
+ overflow: hidden;
+ position: absolute;
+ width: 1px;
+ background-color: #000;
+ color: #fff;
+ font-weight: 700; 
+}
+.met-sl:focus {
+ clip: rect(auto, auto, auto, auto);
+ height: inherit;
+ margin: inherit;
+ overflow: inherit;
+ position: static;
+ width: inherit;
+ color: #fff;
+ text-decoration: none; 
+}
+#canadahd {
+ background-color: @base-colour;
+ width: 100%;
+ min-height: 42px;
+ padding-top: 4px;
+ display: block
+}
+#canadahd h1 a {
+ color:@offset-colour;
+ text-decoration:none;
+}
+#canadahd .lft {
+ padding-left: 2px;
+}
+#canadahd .rgt {
+ padding-right: 2px;
+}
+#canadahd .btn-head {
+ color: @offset-colour;
+ font-size: @font-size;
+ line-height: 1.4;
+ background-color: transparent;
+ padding-left: 10px;
+ padding-right: 10px;
+}
+#canadahdtl h1 {
+ color: @offset-colour;
+ font-family: @base-font;
+ font-size: @font-size;
+ font-weight: bold;
+ text-align: center;
+ margin: 0px 1px;
+ padding-top: 0.5em; 
+ padding-right: 0px;
+ padding-left: 0px;
+ padding-bottom: 0.5em;
+ display: block;
+ text-overflow: ellipsis;
+ overflow: hidden;
+ white-space: nowrap;
+ border: none;
+ text-shadow: 0px 1px 0px darken(@base-colour, 25%);
+}
+img.fip, object.fip {
+ margin-top: 16px;
+ margin-bottom: 12px;
+ margin-left: auto;
+ margin-right: auto
+}
+#splash .maintitles h1 { font-size: 1.8em; line-height: 1.1em; text-align: center; margin-bottom: 1em; padding-top: 4px }
+#splash .btn {
+ text-overflow:ellipsis;
+ overflow: hidden;
+ white-space: nowrap;
+}
+#splash .ver {
+ padding-top:10%;
+ width: 100%;
+ clear: both;
+ right: auto;
+ left: auto;
+}
+
+.navmenu-nav > li:first-child {
+  border-top: 1px dotted @offset-colour;
+}
+.navmenu-nav > li {
+  border-bottom: 1px dotted @offset-colour;
+}
+#main-menu {
+  background: @base-colour;
+}
+#main-menu a {
+  color: @offset-colour;
+}
+#main-menu a#closeMenu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+}
+#main-menu a:hover, #main-menu a:focus {
+  color: #ccc;
+}
+#main-menu .modal-content {
+  background-color: @base-colour;
+  color: @offset-colour;
+}
+#main-menu .modal-content .close {
+  color: @offset-colour;
+  text-shadow: 0px 1px 0px #000000;
+}
+
+.modal-spinner {
+  background: url('../images/spinner.gif');
+  background: url('../images/spinner.svg'),
+              linear-gradient(transparent, transparent);
+  
+  background-size: 60px 60px;
+  background-origin: padding-box;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center 2.5em;
+  min-height: 150px;
+}
+.modal-spinner .row
+{
+  min-height: 100%;
+}
+/*#settingsMenu .modal-content {
+ background-color:@base-colour;
+ color:@offset-colour;
+}
+#settingsMenu .modal-content .close {
+ color: @offset-colour;
+ text-shadow: 0px 1px 0px rgba(0,0,0,1.00);
+}*/
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 51px;
+  background-color: @offset-colour;
+  border-top: 3px solid @base-colour;
+  clear: both;
+}
+#wm-mw {
+ text-align: center;
+ display: block;
+ padding-top: 8px;
+}
+a {
+color: @base-colour
+}
+a:hover, a:focus {
+color: lighten(@base-colour, 10%)
+}
+h1 { color: @secondary-colour; padding-top: 0px; padding-right: 0px; padding-left: 0px; padding-bottom: 0px; font-size: 135%; line-height: 1.1em }
+h2 { color: @secondary-colour; padding: 0px; font-size: 125% }
+h3 { font-size: 115%; line-height: 1em }
+h4 { font-size: 105%; line-height: 1em }
+h5 { font-size: 95%; line-height: 1em }
+h6 { font-size: 85%; line-height: 1em }
+
+h1, h2, h3, h4, h5, h6 {
+font-family: @secondary-font;
+font-weight:700;
+}
+
+th {
+ background-color: lighten(@secondary-colour, 80%);
+}
+a[href^='mailto:']::after {
+ font-family: "Glyphicons Halflings";
+ content:"\2709";
+ margin-left: 5px;
+ margin-right: 3px;
+ color: #656565;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+}
+
+a[href^='http:'][rel="external"]::after {
+ font-family: "Glyphicons Halflings";
+ content:"\e164";
+ margin-left: 4px;
+ margin-right: 3px;
+ color: #656565;
+ text-decoration:none;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+}
+
+.noradius {
+ border-radius: 0px;
+}
+
+@media (min-width: @screen-sm-min) { 
+
+}
+
+@media (min-width: @screen-md-min) {
+
+}
+
+@media (min-width: @screen-lg-min) {
+
+}
+
+@media (max-width: @screen-xs) {
+ #splash .col-xs-6:first-of-type {
+  padding-left: 8px;
+  padding-right: 3px;
+ }
+  #splash .col-xs-6:last-of-type {
+  padding-right: 8px;
+  padding-left: 3px;
+ }
+ .container .jumbotron, .container-fluid .jumbotron {
+   padding-left: 12px;
+   padding-right: 12px;
+   padding-top: 12px;
+   padding-bottom: 12px;
+ }
+}
+
+@media (min-width: @screen-xs) and (max-width: @screen-sm) {
+  .modal-spinner {
+    background-position: center 1.5em;
+  }
+ #splash .col-xs-6:first-of-type {
+  padding-left: 10px;
+  padding-right: 5px;
+ }
+  #splash .col-xs-6:last-of-type {
+  padding-right: 10px;
+  padding-left: 5px;
+ }
+ .container .jumbotron, .container-fluid .jumbotron {
+   padding-left: 18px;
+   padding-right: 18px;
+   padding-top: 18px;
+   padding-bottom: 18px;
+ }
+}
+
+@media (max-width: @screen-xs-max) {
+  .modal-spinner {
+    background-position: center 1.5em;
+  }
+}
+
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+
+}
+
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+
+}
+
+@media (min-width: @screen-lg-min) {
+
+}
+
+/* BBQ10 */
+@media screen and (device-height : 720px) and (device-width : 720px) {
+
+}
+
+
+//Spinner CSS
+
+.spinner {
+	display: block;
+	margin: auto;
+	width: 10%;
+	height: auto;
+}
+
+.spinner-button {
+	bottom: 15px;
+	display: inline-block;
+	left: 2px;
+	height: 100%;
+	margin: 0px auto !important;
+	position: relative;
+	width: 100%;
+}
+
+.spinner-text {
+	bottom: 1em;
+	display: inline-block;
+	font-size: @font-size;
+	margin: 0px auto;
+	position: relative;
+	width: 100%;
+}
+
+.spinnerBtn-cont {
+	bottom: 0px;
+	position: absolute;
+	width: 100%;
+}

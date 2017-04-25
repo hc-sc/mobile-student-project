@@ -1,0 +1,519 @@
+{
+
+  "intro-profile": {
+    "title": "Introduction",
+    "content": "Welcome to the Pesticide Engagement Portal Companion App. With this application, you can engage with the Pest Management Regulatory Agency. Would you like to make a profile now? This is entirely optional, saved only on your device, and you can change the data at any point."
+
+  },
+
+  "messages": {
+    "keepDraft": "Use previous draft? (cancel to discard)"
+  },
+  "about-page": {
+    "title": "Information",
+    "header": "Welcome to the PEP Companion App!",
+    "content": "Using this application should be as easy as filling in a paper form.</p><p>Right now we have several forms you can choose from.  Tap on the form that's most appropriate for the situation.</p><p>If you've entered a profile in this application, you can select the 'Use your saved profile' option to automatically load your details into the form so you don't have to type them in.</p><p>Once you're in a form, you can press the next and previous buttons to move forward and backward along the various pages in that form.  Once you hit submit, the form will be uploaded to Health Canada for action, and a confirmation number will be sent back to you and saved on your device.</p><p>You can review the case numbers you've sent previously with the 'History' option, accessible from the menu button in the upper bar.</p><p>You can review and change your profile at any time with the 'Profile' option, also available from that upper bar."
+  },
+  "main-menu": {
+    "btnMenuHome": "Home",
+    "btnMenuProfile": "Profile",
+    "btnMenuAbout": "About",
+    "btnMenuHistory": "History"
+  },
+  "profile": {
+    "2": "Reporter",
+    "@2": [
+      "Individual",
+      "Company Representative"
+    ],
+    "3": "Company Name",
+    "4": "Title/Position",
+    "5": "First Name",
+    "6": "Last Name",
+    "7": "Address",
+    "8": "City",
+    "9": "Country",
+    "10": "Subdivision",
+    "11": "Postal Code/ZIP",
+    "12": "Telephone",
+    "13": "Email Address",
+    "btnSaveProfile": "Save Profile"
+  },
+  "main-page": {
+    "tileHeader_1": "Information Service Inquiry",
+    "tileHeader_2": "Compliance Violation Report",
+    "tileHeader_3": "Consultation Comment",
+    "tileHeader_4": "Reading Room Request",
+    "tileHeader_5": "Notice of Objection",
+    "tileHeader_6": "Voluntary Incident Report"
+  },
+  "6027": {
+    "Privacy": {
+      "privacy-title": "Privacy Notice Statement",
+      "privacy-header": "For Information Service Inquiry",
+      "privacy-content": "I hereby agree to the privacy Notice statement and by hitting agree I am agree to all the information filled out in thei form to be submited"
+    },
+    "Headers": [
+      "Submitter Details",
+      "Product Details",
+      "Inquiry",
+      "Submit"
+    ],
+    "Name": "Information Service Inquiry Form",
+    "Instructions": "Go here",
+    "6": "Type of organization",
+    "@6": [
+      "General Public / Consumer",
+      "Media",
+      "Government - Federal",
+      "Government - Provincial / Territorial",
+      "Government - Munucupal",
+      "Government (Foreign)",
+      "Grower / Farmer",
+      "Pest Control Applicator",
+      "Lawyer",
+      "Non-Government Organization (NGO)",
+      "Other (Specify)"
+    ],
+    "6a": "Other type of organization",
+    "7": "Company Name",
+    "8": "Title/Position",
+    "9": "First Name",
+    "10": "Last Name",
+    "11": "Address",
+    "12": "City",
+    "13": "Country",
+    "@13": "@country",
+    "14": "Province/State",
+    "@14": "@subdivision",
+    "15": "Postal Code/ZIP",
+    "16": "Telephone",
+    "17": "Email Address",
+    "2": "Product name",
+    "3": "Registration Number",
+    "4": "Active ingredients",
+    "19": "Subject",
+    "@19": [
+      "Animal Health",
+      "Compliance",
+      "Environment",
+      "GROU Program",
+      "Human Health",
+      "Pesticide Regulations",
+      "Publications",
+      "Regulatory Advice",
+      "Pesticide safety",
+      "Other (specify)"
+    ],
+    "19a": "Other subject",
+    "20": "Describe issue in detail.",
+    "21": "Attachments",
+    "22": "Add more attachments",
+    "23": "I have read, understood and agree with the",
+    "23a": "Privacy Notice Statement",
+    "btnNewProd": "Add New Product",
+    "btnAttach": "Attach photo",
+    "btnAttachMore": "Add more attachments",
+    "btnSubmitForm": "Submit"
+  },
+  "6125": {
+    "Privacy": {
+      "privacy-title": "Privacy Notice Statement",
+      "privacy-header": "For Compliance Violation Report",
+      "privacy-content": "I hereby agree to the privacy Notice statement and by hitting agree I am agree to all the information filled out in thei form to be submited"
+    },
+    "Headers": [
+      "Reporter Profile",
+      "Suspected Violator",
+      "Products",
+      "Violation Details",
+      "Submit"
+    ],
+    "Name": "Compliance Violation Report",
+    "Instructions": "Go here",
+    "2": "Are you reporting as",
+    "@2": [
+      "Individual",
+      "Company Representative"
+    ],
+    "3": "Company Name",
+    "4": "Title/Position",
+    "5": "First Name",
+    "6": "Last Name",
+    "7": "Address",
+    "8": "City",
+    "9": "Country",
+    "@9": "@country",
+    "10": "Province/State",
+    "@10": "@subdivision",
+    "11": "Postal Code/ZIP",
+    "12": "Telephone",
+    "13": "Email Address",
+    "15": "Type of Violator",
+    "@15": [
+      "Company",
+      "Individual",
+      "Unknown",
+      "Other (specify)"
+    ],
+    "15a": "Other type of violator",
+    "16": "Company Name",
+    "17": "First Name",
+    "18": "Last Name",
+    "19": "Address",
+    "20": "City",
+    "21": "Country",
+    "@21": "@country",
+    "22": "Province",
+    "@22": "@subdivision",
+    "23": "Postal Code/ZIP",
+    "24": "Telephone",
+    "25": "Is the product registered in Canada?",
+    "@25": [
+      "Yes",
+      "No",
+      "Unknown"
+    ],
+    "26": "Product name",
+    "27": "Registration number",
+    "28": "Active ingredients",
+    "29": "Lot / Batch Number",
+    "31": "Violation related to",
+    "@31": [
+      "Unregistered Product",
+      "Misuse of Product",
+      "Unknown"
+    ],
+    "32": "Violation date",
+    "33": "Type of violation",
+    "@33": [
+      "Sales / Distrobution",
+      "Use",
+      "Manufacturing",
+      "Advertising",
+      "Importation",
+      "Other (specify)"
+    ],
+    "34": "Impact of suspected violation",
+    "@34": [
+      "Health",
+      "Environment",
+      "Other (Specify)"
+    ],
+    "35": "Is the suspected violation still occurring?",
+    "@35": [
+      "Yes",
+      "No",
+      "Unknown"
+    ],
+    "36": "Other Regulatory Agencies that have been notified",
+    "37": "Describe the violation in detail",
+    "40": "I authorize Health Canada to provide my contact information to the manufacturer / importer / distributor or user, in order to facilitate verification of compliance, if necessary.",
+    "41": "I authorize Health Canada to release the contents of this report and refer my complaint / incident and product details to another organization outside Health Canada to facilitate verification of compliance, if necessary",
+    "42": "I have read, understood and agree with the",
+    "42a": "Privacy Notice Statement",
+    "btnHelp": {
+      "title": "Help",
+      "content": "- What is the violation? \n - When and where did the violation took place? \n - How did this violation happen? \n - What is the impact of this violation?"
+    },
+    "Attachments": "Take Photo",
+    "Authorization": false,
+    "btnSubmitForm": "Submit"
+  },
+  "6500": {
+    "Privacy": {
+      "privacy-title": "Privacy Notice Statement",
+      "privacy-header": "For Information Service Inquiry",
+      "privacy-content": "I hereby agree to the privacy Notice statement and by hitting agree I am agree to all the information filled out in thei form to be submited"
+    },
+    "Headers": [
+      "Consult. Comment",
+      "Comment Details",
+      "Submit"
+    ],
+    "Name": "Consultation",
+    "Instructions": "Go here",
+    "3": "Type of organization",
+    "@3": [
+      "Academic",
+      "Growers Group",
+      "Grower / Farmer",
+      "Industry",
+      "Non-Government Organization (NGO)",
+      "Other (Specify)",
+      "Public",
+      "Registrant / Applicant / Representative",
+      "User Group",
+      "Government - Federal",
+      "Government - Provincial / Territorial",
+      "Government - Munucupal",
+      "Government (Foreign)",
+      "Media"
+    ],
+    "3a": "Other type of organization",
+    "4": "Company Name",
+    "5": "Title/Position",
+    "6": "First Name",
+    "7": "Last Name",
+    "8": "Address",
+    "9": "City",
+    "10": "@country",
+    "11": "@subdivision",
+    "12": "Postal Code/ZIP",
+    "13": "Telephone",
+    "14": "Email Address",
+    "2": "Consultation document",
+    "16": "What are you providing comments on?",
+    "@16": [
+      "Chemistry",
+      "Dietary exposure",
+      "Environment",
+      "Exposure of Bystanders / Workers",
+      "Health (Human/Animal)",
+      "Measures to minimize risk",
+      "Other (Specify)",
+      "Pollinators",
+      "Proposed Measures",
+      "Residues in Water and Food",
+      "Toxicology",
+      "Usefulness / Efficacy of Pesticides (Value)"
+    ],
+    "16a": "Other topic",
+    "17": "Describe the issue in detail",
+    "19": "Add more comments",
+    "Attachments": "Attachment",
+    "Authorization": false
+  },
+  "7000": {
+    "Privacy": {
+      "privacy-title": "Privacy Notice Statement",
+      "privacy-header": "For Information Service Inquiry",
+      "privacy-content": "I hereby agree to the privacy Notice statement and by hitting agree I am agree to all the information filled out in thei form to be submited"
+    },
+    "Headers": [
+      "Submitter Details",
+      "Inspection Info",
+      "Purpose",
+      "Confidential Test Data",
+      "Submit"
+    ],
+    "Name": "Reading Room Request",
+
+    "Instructions": "Go here",
+    "2": "First Name",
+    "3": "Last Name",
+    "4": "Address",
+    "5": "City",
+    "6": "@country",
+    "7": "@subdivision",
+    "8": "Postal Code/ZIP",
+    "9": "Telephone",
+    "10": "Email Address",
+    "12": "Affiliation",
+    "@12": [
+      "Media",
+      "Other organization",
+      "Pesticide manufacturer",
+      "Public"
+    ],
+
+    "12a": "Describe selected affiliation",
+    "13": "Representation",
+    "@13": [
+      "I wish to inspect data for my own use only",
+      "I wish to inspect data at the request of [blank box] to whom I will be reporting",
+      "Other"
+    ],
+    "13a": "Describe selected representation",
+    "14": "Purpose of inspection",
+    "@14": [
+      "Possibility of filing a notice of objection, within 60 days of a final regulatory decision",
+      "Other"
+    ],
+    "14a": "Other purpose of inspection",
+    "15.1": "Product Information",
+    "@15.1": [
+      "Active Ingredient",
+      "Registration Number",
+      "End-use product"
+    ],
+    "15.2": "Study Information",
+    "15.2.1": "PMRA Document Number",
+    "15.2.2": "Study title",
+    "15.2.3": "Data Code [DACO]",
+    "15.2.4": "Study Type",
+    "15.2.4.1": "Chemistry (not designated as Confidential Business Information)",
+    "15.2.4.2": "Human Health (Toxicology, Food Residue, Occupational Exposure)",
+    "15.2.4.3": "Environment (Environmental chemistry, environmental fate)",
+    "15.2.4.4": "Efficacy (Crop tolerance data, value)",
+    "18": "If unable to identify the test data according to criteria listed above, provide a description in your own words.",
+    "Attachments": "Attachment",
+    "Authorization": false
+  },
+  "7004": {
+    "Privacy": {
+      "privacy-title": "Privacy Notice Statement",
+      "privacy-header": "For Information Service Inquiry",
+      "privacy-content": "I hereby agree to the privacy Notice statement and by hitting agree I am agree to all the information filled out in thei form to be submited"
+    },
+    "Headers": [
+      "Submitter Details",
+      "Objection Details",
+      "Submit"
+    ],
+    "Name": "Notice of Objection",
+
+    "Instructions": "Go here",
+    "2": "Name (Corporation / Organization)",
+    "3": "Title / Position",
+    "4": "First Name",
+    "5": "Last Name",
+    "6": "Address",
+    "7": "City",
+    "8": "@country",
+    "9": "@subdivision",
+    "10": "Postal Code/ZIP",
+    "11": "Telephone",
+    "12": "Email Address",
+    "14": "Name of Active Ingredient to which the decision relates",
+    "15": "Registation Number",
+    "16": "Decisions on applications",
+    "@16": [
+      "Granting registration",
+      "Denying registration",
+      "Granting an amendment of a registration"
+    ],
+
+    "17": "Decisions on re-evaluation or special review",
+    "@17": [
+      "Confirming registration through re-evaluation",
+      "Cancelling registration through re-evaluation",
+      "Ammending registration through re-evaluation"
+    ],
+    "18": "Date the decision statement was made public",
+    "19": "Area of scientific evaluation to which the objection relates",
+    "@19": [
+      "Health Risk Assessment (Toxicology, Food Residue, Occupational Exposure)",
+      "Environmental Risk Assessment (Environmental Fate, Environmental Toxicology)",
+      "Value and Efficacy Assessments (Crop Tolerance, Value"
+    ],
+    "20": "Scientific basis for the objection",
+    "Attachments": "Take Photo",
+    "Authorization": false
+  },
+  "7011": {
+    "Privacy": {
+      "privacy-title": "Privacy Notice Statement",
+      "privacy-header": "For Information Service Inquiry",
+      "privacy-content": "I hereby agree to the privacy Notice statement and by hitting agree I am agree to all the information filled out in thei form to be submited"
+    },
+    "Headers": [
+      "Incident Type",
+      "Reporter Profile",
+      "Reporter Address",
+      "Incident Details 1",
+      "Incident Details 2",
+      "Product Details",
+      "Submit"
+    ],
+    "Name": "Voluntary Incident Reporting",
+    "Instructions": "Go here",
+    "5": "Who is reporting this incident?",
+    "@5": [
+      "Animal Owner",
+      "Medical Professional",
+      "The person who experienced the incident",
+      "Veterinary Professional",
+      "Witness",
+      "Other (Specify)"
+    ],
+    "5a": "Other reporter type",
+    "_10": "First Name",
+    "_11": "Last Name",
+    "_12": "Address",
+    "_13": "City",
+    "_14": "Country",
+    "@_14": "@country",
+    "_15": "Province/State",
+    "@_15": "@subdivision",
+    "_16": "Postal Code/ZIP",
+    "_17": "Telephone",
+    "_18": "Email Address",
+    "2": "Type of Incident Reported",
+    "@2": [
+      "Domestic Animal",
+      "Environment",
+      "Human Health"
+    ],
+    "3": "City / Municipality",
+    "4": "Province",
+    "@4": [
+      "Alberta",
+      "British Columbia",
+      "Manitoba",
+      "New Brunswick",
+      "Newfoundland",
+      "Nova Scotia",
+      "Ontario",
+      "Prince Edward Island",
+      "Quebec",
+      "Saskatchewan",
+      "Northwest Territories",
+      "Yukon Territory"
+    ],
+    "10": "Date incident occurred",
+    "11": "Age",
+    "12": "Gender",
+    "%12": [
+      "Female",
+      "Male",
+      "Other"
+    ],
+    "13": "Type of animal affected (choose one per form)",
+    "@13": [
+      "Bird",
+      "Cat",
+      "Cow",
+      "Dog",
+      "Fish",
+      "Other (Specify)",
+      "Pig Horse",
+      "Poultry",
+      "Sheep"
+    ],
+    "13a": "Other (Specify)",
+    "14": "Number of animals",
+    "15": "Number of plants affected (estimate)",
+    "16": "Describe all symptoms (in details)",
+    "17a": "Where was / were the animal(s) found?",
+    "17b": "Where was / were the plant(s) found?",
+    "@17": [
+      "Fresh water",
+      "Land",
+      "Salt water"
+    ],
+
+    "18": "Describe the incident (in details)",
+    "19": "What was exposed?",
+    "@19": [
+      "Eye",
+      "Oral",
+      "Respiratory (breathing)",
+      "Skin",
+      "Unknown"
+    ],
+    "20": "Has this incident been reported to the manufacturer?",
+    "%20": [
+      "No",
+      "Yes",
+      "Unknown"
+    ],
+    "21": "Date incident reported to manufacturer",
+    "6": "Product name",
+    "7": "Active ingredient",
+    "8": "Registration number",
+    "9": "Manufacturer's Name",
+    "btnAttach": "Take photo",
+    "Authorization": false
+  }
+}

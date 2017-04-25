@@ -1,0 +1,517 @@
+{
+	"intro-profile":
+	{
+		"title": "Introduction",
+		"content" :"Bienvenue dans l'application complémentaire Portail d'engagement de pesticides. Avec cette demande, vous pouvez vous engager auprès de l'Agence de réglementation de la lutte antiparasitaire. Souhaitez-vous faire un profil maintenant? Ceci est entièrement facultatif, sauvegardé uniquement sur votre appareil, et vous pouvez modifier les données en tout point."
+		
+	},
+  "messages": {
+    "keepDraft": "Utilisation précédent brouillon? (annuler à jeter)"
+  },
+  "about-page": {
+    "title": "Information",
+    "header": "Le Welcome to the PEP Companion App!",
+    "content": "L'utilisation de cette application devrait être aussi simple que remplir un formulaire papier. </p> <p> À l'heure actuelle, nous avons plusieurs formes dont vous pouvez choisir. Appuyez sur le formulaire qui convient le mieux à la situation. </p> <p> Si vous avez entré un profil dans cette application, vous pouvez sélectionner l'option 'Utiliser votre profil enregistré' pour charger automatiquement vos informations dans le formulaire afin que vous Ne devez pas les taper. </p> <p> Une fois que vous avez choisi votre formulaire, vous pouvez appuyer sur les boutons suivants et précédents pour avancer et reculer le long des différentes pages sous cette forme. Une fois que vous appuyez sur soumettre, le formulaire sera envoyé à Santé Canada et un numéro de confirmation vous sera renvoyé et enregistré sur votre appareil. </p> <p> Vous pouvez consulter les numéros de cas que vous avez déjà envoyés Avec l'option 'Historique', accessible à partir du bouton de menu dans la barre supérieure. </p> <p> Vous pouvez consulter et modifier votre profil à tout moment avec l'option 'Profil', également disponible dans cette barre supérieure."
+  },
+  "main-menu": {
+    "btnMenuHome": "Home",
+    "btnMenuProfile": "Profil",
+    "btnMenuAbout": "Sur",
+    "btnMenuHistory": "Histoire"
+  },
+  "profile": {
+    "2": "Déposez-vous cette plainte en tant que…",
+    "@2": [
+      "Individu",
+      "Représentant d’entreprise"
+    ],
+    "3": "Nom de l'entrepris",
+    "4": "Titre ou poste",
+    "5": "Prénom",
+    "6": "Nom de famille",
+    "7": "Adresse",
+    "8": "Ville",
+    "9": "Pays",
+    "10": "Province ou État",
+    "11": "Code postal ou zip",
+    "12": "Numéro d'homologation",
+    "13": "Adresse électronique",
+    "btnSaveProfile": "Le button save profile"
+  },
+  "main-page": {
+    "tileHeader_1": "Information Un Service Enquête",
+    "tileHeader_2": "Conformité Violation Rapport",
+    "tileHeader_3": "Consultation Commentaire",
+    "tileHeader_4": "Demande de salle de lecture",
+    "tileHeader_5": "Remarquer de Objection",
+    "tileHeader_6": "Volontaire Incident Rapport"
+  },
+  "6027": {
+	 "Privacy":{
+	  "privacy-title":"Privacy Notice Statement",
+	  "privacy-header":"Information Un Service Enquête",
+	  "privacy-content": "J'accepte par la présente l'énoncé de la Déclaration de confidentialité et, en frappant d'accord, j'accepte toutes les informations remplies dans le formulaire à soumettre"
+  	}, 
+	  "Headers":[
+		  "Détails de l'auteur",
+		  "Détails du produit",
+		  "Enquête",
+		  "Soumettre"
+	  ],
+    "Name": "Information Un Service Enquête",
+    "Instructions": "LE Go here",
+    "6": "Qui représentez-vous?",
+    "@6": [
+      "Public / Consommateur",
+      "Médias",
+      "Gouvernement - Fédéral",
+      "Gouvernement - Provincial / Territorial",
+      "Gouvernement - Municipal",
+      "Government (Étranger)",
+      "Producteur / Fermier ",
+      "Préposé à l'application",
+      "Avocat",
+      "Organisation non gouvernementale (ONG)",
+      "Autre (préciser)"
+    ],
+    "6a": "Autre (préciser)",
+    "7": "Nom de l'entreprise",
+    "8": "Titre ou poste",
+    "9": "Prénom",
+    "10": "Nom de famille",
+    "11": "Adresse",
+    "12": "Ville",
+    "13": "Pays",
+    "@13": "@country",
+    "14": "Province ou État",
+    "@14": "@subdivision",
+    "15": "Code postal ou zip",
+    "16": "Téléphone",
+    "17": "Adresse électronique",
+    "2": "Nom du produit",
+    "3": "Numéro d'homologation",
+    "4": "Matières active",
+    "19": "Sujet",
+    "@19": [
+      "Santé animale",
+      "Conformité",
+      "Environnement",
+      "Programme d'importation pour approvisionnement personnel à la demande des agriculteurs",
+      "Santé humaine",
+      "Réglementation des pesticides",
+      "Publications",
+      "Conseils réglementaires",
+      "Sécurité des pesticides",
+      "Autre (préciser)"
+    ],
+    "19a": "Autre (préciser)",
+    "20": "Décrire le problème (en détails)",
+    "21": "Pièces jointes",
+    "22": "Ajouter plus de pièces jointes",
+    "23": "J'ai lu, compris et accepté le",
+	"23a":"Déclaration de confidentialité",
+    "btnNewProd": "LE Add New Product",
+    "btnAttach": "LE Attach photo",
+    "upstream": null,
+    "btnAttachMore": "LE Add more attachments",
+    "btnSubmitForm": "LE Submit"
+  },
+  "6125": {
+	 "Privacy":{
+	  "privacy-title":"Privacy Notice Statement",
+	  "privacy-header":"Information Un Service Enquête",
+	  "privacy-content": "J'accepte par la présente l'énoncé de la Déclaration de confidentialité et, en frappant d'accord, j'accepte toutes les informations remplies dans le formulaire à soumettre"
+  	},  
+	  "Headers":[
+		  "Profil du journaliste",
+		  "Violateur soupçonné",
+		  "Des produits",
+		  "Détails de la violation",
+		  "Soumettre"
+	  ],
+    "Name": "Conformité Violation Rapport",
+    "Instructions": "Go here",
+    "2": "Déposez-vous cette plainte en tant que…",
+    "@2": [
+      "Individu",
+      "Représentant d’entreprise"
+    ],
+    "3": "Nom de l'entreprise",
+    "4": "Titre ou poste",
+    "5": "Prénom",
+    "6": "Nom de famille",
+    "7": "Adresse",
+    "8": "Ville",
+    "9": "Country",
+    "@9": "@country",
+    "10": "Subdivision",
+    "@10": "@subdivision",
+    "11": "Province ou État",
+    "12": "Téléphone",
+    "13": "Email Address",
+    "15": "Type de contrevenant",
+    "@15": [
+      "Entreprise",
+      "Individu",
+      "Inconnu",
+      "Autre (préciser)"
+    ],
+    "15a": "Autre (préciser)",
+    "16": "Nom de l'entreprise",
+    "17": "Prénom",
+    "18": "Nom de famille",
+    "19": "Adresse",
+    "20": "Ville",
+    "21": "Country",
+    "@21": "@country",
+    "22": "Province ou État",
+    "@22": "@subdivision",
+    "23": "Code postal ou zip",
+    "24": "Téléphone",
+    "25": "Le produit est-il enregistré?",
+    "@25": [
+      "Oui",
+      "Non",
+      "Ignor&eacute;"
+    ],
+    "26": "Nom du produit",
+    "27": "Numéro d'homologation",
+    "28": "Matières active",
+    "29": "Numéro de lot",
+    "31": "Est une violation reliée à",
+    "@31": [
+      "Produits non homologués",
+      "Utilisation non-conforme",
+      "Inconnu"
+    ],
+    "32": "Date de la violation",
+    "33": "Type de violation",
+    "@33": [
+      "Vente / distribution",
+      "Utilisation",
+      "Fabrication",
+      "Publicité",
+      "Importation",
+      "Autre (préciser)"
+    ],
+    "34": "Incidence de la violation soupçonnée",
+    "@34": [
+      "Santé",
+      "Environnement",
+      "Autre (préciser)"
+    ],
+    "35": "Y a-t-il récidive de l'infraction soupçonnée?",
+    "@35": [
+      "Oui",
+      "Non",
+      "Inconnu"
+    ],
+    "36": "Autres organismes de réglementation qui ont été avisés",
+    "37": "Décrire la violation (en détails)",
+	"40": "J'autorise Santé Canada à fournir mes coordonnées au fabricant / importateur / distributeur ou utilisateur, afin de faciliter la vérification de la conformité, le cas échéant.",
+	"41":"J'autorise Santé Canada à publier le contenu de ce rapport et à renvoyer ma plainte / incident et les détails d'un produit à un autre organisme à l'extérieur de Santé Canada pour faciliter la vérification de la conformité, le cas échéant",
+	"42": "J'ai lu, compris et accepté le",
+	"42a":"Déclaration de confidentialité",
+	"btnHelp": {
+	  "title":"Help",
+	  "content":  "- Quelle est la violation? \n - Où et quand la violation a-t-elle eu lieu?  \n -Comment cette violation s'est-elle produite? \n - Quel est l'impact de cette violation?"
+  	},
+    "Attachments": "Le Photo",
+    "Authorization": false,
+    "btnSubmitForm": "LE Submit"
+  },
+  "6500": {
+	 "Privacy":{
+	  "privacy-title":"Privacy Notice Statement",
+	  "privacy-header":"Information Un Service Enquête",
+	  "privacy-content": "J'accepte par la présente l'énoncé de la Déclaration de confidentialité et, en frappant d'accord, j'accepte toutes les informations remplies dans le formulaire à soumettre"
+  	}, 
+	  "Headers":[
+		  "Consulter. Commentaire",
+		  "Détails du commentaire",
+		  "Soumettre"
+	  ],
+    "Name": "Consultation Commentaire",
+    "Instructions": "Go here",
+    "3": "Type d'organisation",
+    "@3": [
+      "Établissement d'enseignement",
+      "Association de producteurs",
+      "Producteur / Fermier",
+      "Industrie",
+      "Organisation non gouvernementale",
+      "Autre (préciser)",
+      "Public",
+      "Titulaire, demandeur ou représentant",
+      "Groupe d'utilisateurs",
+      "Gouvernement - Fédéral",
+      "Gouvernement - Provincial / Territorial",
+      "Gouvernement - Municipal",
+      "Gouvernement (Étranger)",
+      "Médias"
+    ],
+    "3a": "Autre Type d'organisation",
+    "4": "Nom de l'entreprise",
+    "5": "Titre ou poste",
+    "6": "Prénom",
+    "7": "Nom de famille",
+    "8": "Adresse",
+    "9": "Ville",
+    "10": "@country",
+    "11": "@subdivision",
+    "12": "Code postal ou zip",
+    "13": "Téléphone",
+    "14": "Adresse électronique",
+    "2": "Consultation document",
+    "16": "Fournissez-vous des commentaires?",
+    "@16": [
+      "Caractéristiques chimiques",
+      "Exposition alimentaire",
+      "Environnement",
+      "Exposition des non-utilisateurs ou des travailleurs",
+      "Santé (humaine et animale)",
+      "Mesures de réduction des risques",
+      "Autre (préciser)",
+      "Pollinisateurs",
+      "Mesures proposées",
+      "Résidus dans l'eau et les aliments",
+      "Toxicologie",
+      "Utilité et efficacité (valeur) des pesticides"
+    ],
+    "16a": "Autre (préciser)",
+    "17": "Décrire le problème (en détails)",
+    "19": "Ajouter plus de commentaires",
+    "Attachments": "Pièces jointes",
+    "Authorization": false
+  },
+  "7000": {
+	"Privacy":{
+	  "privacy-title":"Privacy Notice Statement",
+	  "privacy-header":"Information Un Service Enquête",
+	  "privacy-content": "J'accepte par la présente l'énoncé de la Déclaration de confidentialité et, en frappant d'accord, j'accepte toutes les informations remplies dans le formulaire à soumettre"
+  	}, 
+	  "Headers":[
+		  "Détails de l'auteur",
+		  "Informations d'inspection",
+		  "Objectif",
+		  "Données de test confidentielles",
+		  "Soumettre"
+	  ],  
+    "Name": "Demande de salle de lecture",
+    "Instructions": "Go here",
+    "2": "Prénom",
+    "3": "Nom de famille",
+    "4": "Adresse",
+    "5": "Ville",
+    "6": "@country",
+    "7": "@subdivision",
+    "8": "Code postal ou zip",
+    "9": "Téléphone",
+    "10": "Adresse électronique",
+    "12": "Affiliation",
+    "@12": [
+      "Média",
+      "Autre organisation",
+      "Fabricant de pesticide",
+      "Public"
+    ],
+    "12a": "Describe selected affiliation",
+    "13": "Représentation",
+    "@13": [
+      "Je souhaite consulter les données à mes propres fins uniquement",
+      "Je souhaite consulter les données à mes propres fins uniquement",
+      "Autre [case vide]"
+    ],
+    "13a": "Describe selected representation",
+    "14": "Objet de l'inspection",
+    "@14": [
+      "Possibilité de remplir un avis d'opposition, dans les 60 jours suivant la date de décision d'homologation définitive",
+      "Autre"
+    ],
+    "14a": "Other purpose of inspection",
+    "15.1": "Renseignements concernant un produit",
+    "@15.1": [
+      "Matière active",
+      "Numéro d'homologation",
+      "Préparation commerciale"
+    ],
+    "15.2": "Renseignements concernant une étude",
+    "15.2.1": "Numéro de document de l'ARLA [case vide]",
+    "15.2.2": "Titre de l'étude [case vide]",
+    "15.2.3": "Code de données ou CODO [case vide]",
+    "15.2.4": "Type d'étude",
+    "15.2.4.1": "Caractéristiques chimiques (non désignées en tant que renseignements commerciaux confidentiels)",
+    "15.2.4.2": "Santé humaine (toxicologie, résidus dans les aliments, exposition professionnelle)",
+    "15.2.4.3": "Environnement (caractéristiques chimiques dans l'environnement, devenir dans l'environnement)",
+    "15.2.4.4": "Efficacité (données sur la tolérance des cultures, valeur)",
+    "18": "Si vous ne pouvez pas identifier les données d'essai selon les critères énumérés ci-dessus, veuillez les décrire dans vos propres mots.",
+    "Attachments": "Pièces jointes",
+    "Authorization": false
+  },
+  "7004": {
+	"Privacy":{
+	  "privacy-title":"Privacy Notice Statement",
+	  "privacy-header":"Information Un Service Enquête",
+	  "privacy-content": "J'accepte par la présente l'énoncé de la Déclaration de confidentialité et, en frappant d'accord, j'accepte toutes les informations remplies dans le formulaire à soumettre"
+  	}, 
+	  "Headers":[
+		  "Détails de l'auteur",
+		  "Détails de l'objection",
+		  "Soumettre"
+	  ],
+    "Name": "Remarquer de Objection",
+    "Privacy Notice": "Goes here",
+    "Instructions": "Go here",
+    "2": "Nom (société ou organisation)",
+    "3": "Titre ou poste",
+    "4": "Prénom",
+    "5": "Nom de famille",
+    "6": "Adresse",
+    "7": "Ville",
+    "8": "@country",
+    "9": "@subdivision",
+    "10": "Code postal ou zip",
+    "11": "Téléphone",
+    "12": "Adresse électronique",
+    "14": "Nom de la matière active concernée par la décision",
+    "15": "Numéro d'homologation",
+    "16": "Décision concernant la demande",
+    "@16": [
+      "Homologation accordée",
+      "Homologation refusée",
+      "Modification de l'homologation accordée"
+    ],
+    "17": "Decisions on re-evaluation or special review",
+    "@17": [
+      "Confirmation de l'homologation après réévaluation",
+      "Révocation de l'homologation après réévaluation",
+      "Modification de l'homologation après réévaluation"
+    ],
+    "18": "Date à laquelle l'énoncé de décision a été rendu public",
+    "19": "Domaine de l'évaluation scientifique visé par l'avis d'opposition",
+    "@19": [
+      "Évaluation des risques sanitaires (toxicologie, résidus dans les aliments, exposition professionnelle)",
+      "Évaluation des risques pour l'environnement (devenir dans l'environnement, toxicologie de l'environnement)",
+      "Évaluation de la valeur et de l'efficacité (tolérance des cultures, valeur)"
+    ],
+    "20": "Fondements scientifiques de l'avis d'opposition",
+    "Attachments": "Le Photo",
+    "Authorization": false
+  },
+  "7011": {
+	"Privacy":{
+	  "privacy-title":"Privacy Notice Statement",
+	  "privacy-header":"Information Un Service Enquête",
+	  "privacy-content": "J'accepte par la présente l'énoncé de la Déclaration de confidentialité et, en frappant d'accord, j'accepte toutes les informations remplies dans le formulaire à soumettre"
+  	}, 
+    "Headers": [
+      "Type d'incident",
+      "Profil du journaliste",
+      "Adresse du rapporteur",
+      "Détails sur l'incident 1",
+      "Détails sur l'incident 2",
+      "Détails du produit",
+      "Soumettre"
+    ],
+    "Name": "Volontaire Incident Rapport",
+    "Instructions": "Go here",
+    "5": "Personne qui déclare l'incident?",
+    "@5": [
+      "Propriétaire de l'animal",
+      "Professionnel de la santé",
+      "Autre (préciser)",
+      "Personne touchée par l'incident",
+      "Vétérinaire professionnel",
+      "Témoin"
+    ],
+    "5a": "Other reporter type",
+    "_10": "Prenom",
+    "_11": "Nom de famille",
+    "_12": "Adresse",
+    "_13": "Ville",
+    "_14": "Pays",
+    "@_14": "@country",
+    "_15": "Province ou État",
+    "@_15": "@subdivision",
+    "_16": "Code postal ou zip",
+    "_17": "Téléphone",
+    "_18": "Adresse électronique",
+    "2": "Type d'incident déclaré",
+    "@2": [
+      "Animal domestique",
+      "Environnement",
+      "Santé humaine"
+    ],
+    "3": "Ville / Municipalité",
+    "4": "Province",
+    "@4": [
+      "Alberta",
+      "Colombie-Britannique",
+      "Manitoba",
+      "Nouveau-Brunswick",
+      "Terre-Neuve",
+      "Nouvelle-Écosse",
+      "Ontario",
+      "Île-du-Prince-Édouard",
+      "Québec",
+      "Saskatchewan",
+      "Territoires du Nord-Ouest",
+      "Teritoire du Yukon"
+    ],
+    "10": "Date de l'incident",
+    "11": "Âge",
+    "12": "Sexe",
+    "%12": [
+      "Femelle",
+      "Mâle",
+      "Autre"
+    ],
+    "13": "Espèce d'animal touché (choisir une espèce par formulaire)",
+    "@13": [
+      "Oiseau",
+      "Chat",
+      "Vache",
+      "Chien",
+      "Poisson",
+      "Autre (préciser)",
+      "Porc ou cheval",
+      "Volaille",
+      "Mouton"
+    ],
+    "13a": "Autre (préciser)",
+    "14": "Nombre d'animaux",
+    "15": "Nombre de plantes touchés (estimation)",
+    "16": "Décrire tous les symptômes  (en détails)",
+    "17a": "Où a-t-on trouvé les animaux plantes?",
+    "17b": "Où a-t-on trouvé les plantes?",
+    "@17": [
+      "Eau douce",
+      "Terre",
+      "Eau salée"
+    ],
+
+    "18": "Décrire l'incident (en détails)",
+    "19": "Qu'est-ce qui a été exposé?",
+    "@19": [
+      "Oculaire",
+      "Orale",
+      "Pulmonaire (respiration)",
+      "Peau",
+      "Inconnu"
+    ],
+    "20": "Cet incident a-t-il été déclaré au fabricant?",
+    "%20": [
+      "Non",
+      "Oui",
+      "Inconnu"
+    ],
+    "21": "Date de déclaration de l'incident au fabricant",
+    "6": "Product name",
+    "7": "Matière active",
+    "8": "Numéro d'homologation",
+    "9": "Nom du fabricant",
+    "btnAttach": "Le Take Photo",
+    "Authorization": false
+  }
+
+}

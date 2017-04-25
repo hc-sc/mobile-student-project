@@ -1,0 +1,248 @@
+<div id="fullHeader">
+	<progress id="progress-bar" min="1" max="100" value="0"></progress>
+	<div id="ballHeader"></div>
+	<div id="navTitle"></div>
+</div>
+<div class="pageHeading">
+    <h1>Reading Room Request</h1>
+</div>  
+<!--options and labels are all placeholder-->
+<form id="7000" role="form" >
+  <div id="page-form-1" class="form-page">
+    <div class="form-group" id="1">
+	  	<input type="checkbox" id="toggleProfile" value="savedProfile" checked data-toggle="toggle"><label for="1">Do you want to use your saved Profile?</label>
+	</div>
+
+    <div class="form-group" id="2">
+      <label for="2">First Name</label>
+      <input class="form-control" type="text" name="2" size="200" required>
+    </div>
+
+    <div class="form-group" id="3">
+      <label for="3">Last Name</label>
+      <input class="form-control" type="text" name="3" size="200" required>
+    </div>
+
+    <div class="form-group" id="4">
+      <label for="4">Address</label>
+      <input class="form-control" type="text" name="4" size="500">
+    </div>
+
+    <div class="form-group" id="5">
+      <label for="5">City</label>
+      <input class="form-control" type="text" name="5" size="100">
+    </div>
+
+    <div class="form-group" id="6">
+      <label for="6">Country</label>
+      <select class="form-control" name="6">
+        <option value="Canada">Canada</option>
+      </select>
+    </div>
+
+    <div class="form-group" id="7">
+      <label for="7">Province/State</label>
+      <select class="form-control" name="7">
+        <option value="Ontario">Ontario</option>
+      </select>
+    </div>
+
+    <div class="form-group" id="8">
+      <label for="8">Postal Code/Zip</label>
+      <input class="form-control" type="text" name="8" size="10">
+    </div>
+
+    <div class="form-group" id="9">
+      <label for="9">Telephone</label>
+      <input class="form-control" type="tel" name="9" size="20">
+    </div>
+
+    <div class="form-group" id="10">
+      <label for="10">Email Address</label>
+      <input class="form-control" type="email" name="10" size="200" required>
+    </div>
+
+    <div class="form-group" id="12">
+      <label for="12">Affiliation</label>
+      <select class="form-control" name="12">
+        <option value="Media">Media</option>
+      </select>
+    </div>
+
+    <div class="form-group" id="12a">
+      <label for="12a">Describe selected affiliation</label>
+     <textarea class="form-control" rows="4" cols="50" name="12a" form="7000" size="200">
+</textarea>
+    </div>
+    <div class="navFooter">
+      <button type="button" class="btn btn-success btn-nav-prev">Prev</button>
+      <button type="button" id="navNext" class="btn btn-success btn-nav-next">Next</button>
+    </div>
+
+  </div>
+  <div id="page-form-2" class="form-page">
+
+    <div class="form-group" id="13">
+      <label for="13">Representation</label>
+      <select class="form-control" name="13" required>
+        <option value="I wish to inspect data for my own use only">I wish to inspect data for my own use only</option>
+      </select>
+    </div>
+
+    <div class="form-group" id="13a">
+      <label for="13a">Describe selected representation</label>
+     <textarea class="form-control" rows="4" cols="50" name="13a" form="7000" size="200">
+</textarea>
+    </div>
+    <div class="navFooter">
+      <button type="button" class="btn btn-success btn-nav-prev">Prev</button>
+      <button type="button" id="navNext" class="btn btn-success btn-nav-next">Next</button>
+    </div>
+
+  </div>
+  <div id="page-form-3" class="form-page">
+    <div class="form-group" id="14">
+      <label for="14">Purpose of inspection</label>
+      <select class="form-control" name="14" required>
+        <option value="Possibility of filing a notice of objection, within 60 days of a final regulatory decision">Possibility of filing a notice of objection, within 60 days of a final regulatory decision</option>
+      </select>
+    </div>
+
+    <div class="form-group" id="14a">
+      <label for="14a">Other purpose of inspection</label>
+      <input class="form-control" type="text" name="14a" size="200" required>
+    </div>
+    <div class="navFooter">
+      <button type="button" class="btn btn-success btn-nav-prev">Prev</button>
+      <button type="button" id="navNext" class="btn btn-success btn-nav-next">Next</button>
+    </div>
+
+  </div>
+
+  <div id="page-form-4" class="form-page">
+
+    <h2 id="16">Confidential Test Data to be Inspected</h2>
+    <div class="form-group" id="15.1">
+      <label for="15.1">Product Information - Active Ingredients</label>
+      <input class="form-control" type="text" name="15.1">
+    </div>
+
+    <div class="form-group" id="15.2">
+      <label for="15.2">Study Information</label>
+      <input class="form-control" type="checkbox" name="15.2">
+      <input class="form-control" type="text">
+    </div>
+
+    <div class="form-group" id="15.2.1">
+      <label for="15.2.1">PMRA Document Number</label>
+      <input class="form-control" type="checkbox" name="15.2.1">
+      <input class="form-control" type="text">
+    </div>
+
+    <div class="form-group" id="15.2.2">
+      <label for="15.2.2">Study Title</label>
+      <input class="form-control" type="checkbox" name="15.2.2">
+      <input class="form-control" type="text">
+    </div>
+
+    <div class="form-group" id="15.2.3">
+      <label for="15.2.3">Data Code [DACO]</label>
+      <input class="form-control" type="checkbox" name="15.2.3">
+      <input class="form-control" type="text">
+    </div>
+
+    <div class="form-group" id="15.2.4">
+      <label for="15.2.4">Study Type</label>
+      <input class="form-control" type="checkbox" name="15.2.4">
+      <input class="form-control" type="text">
+    </div>
+
+    <div class="form-group" id="15.2.4">
+      <label for="15.2.4">Study Type</label>
+      <input class="form-control" type="checkbox" name="15.2.4">
+      <input class="form-control" type="text">
+    </div>
+
+    <div class="form-group" id="15.2.4">
+      <label for="15.2.4">Chemistry (not designated as Confidential Business Information)</label>
+      <input class="form-control" type="checkbox" name="15.2.4">
+      <input class="form-control" type="text">
+    </div>
+
+    <div class="form-group" id="15.2.4.2">
+      <label for="15.2.4.2">Human Health (Toxicology, Food Residue, Occupational Exposure)</label>
+      <input class="form-control" type="checkbox" name="15.2.4.2">
+      <input class="form-control" type="text">
+    </div>
+
+    <div class="form-group" id="15.2.4.3">
+      <label for="15.2.4.3">Environment (Environmental chemistry, environmental fate)</label>
+      <input class="form-control" type="checkbox" name="15.2.4.3">
+      <input class="form-control" type="text">
+    </div>
+
+    <div class="form-group" id="15.2.4.4">
+      <label for="15.2.4.4">Efficacy (Crop tolerance data, value)</label>
+      <input class="form-control" type="checkbox" name="15.2.4.4">
+      <input class="form-control" type="text">
+    </div>
+
+    <div class="form-group" id="18">
+      <label for="18">If unable to identify the test data according to criteria listed above, provide a description in your own words.</label>
+      <textarea class="form-control" rows="4" cols="50" name="18" form="7000" size="2000">
+</textarea>
+    </div>
+    <div class="navFooter">
+      <button type="button" class="btn btn-success btn-nav-prev">Prev</button>
+      <button type="button" id="navNext" class="btn btn-success btn-nav-next">Next</button>
+    </div>
+
+  </div>
+  <div id="page-form-5" class="form-page">
+
+    <div class="form-group" >
+      <button id="btnAttach">Attachments</button>
+      <button id="17">Add more Attachments</button>
+    </div>
+
+    <h4 id="19">Authorization</h4>
+    <div class="form-group" id="20">
+      <label for="20">I have read, understood and agree with the Privacy Notice Statement</label>
+      <input class="form-control" type="checkbox" name="20">
+    </div>
+
+    <div class="form-group" id="20.1">
+      <label for="20.1">I have read, understood and agree with the Privacy Notice Statement</label>
+      <input class="form-control" type="checkbox" name="20.1">
+    </div>
+
+    <div class="form-group" id="20.2">
+      <label for="20.2">I have read, understood and agree with the Privacy Notice Statement</label>
+      <input class="form-control" type="checkbox" name="20.2">
+    </div>
+
+    <div class="form-group" id="20.3">
+      <label for="20.3">I have read, understood and agree with the Privacy Notice Statement</label>
+      <input class="form-control" type="checkbox" name="20.3">
+    </div>
+
+    <div class="form-group" id="21">
+      <label for="21">Applicant Signature</label>
+      <input class="form-control" type="text" name="21" size="200" required>
+    </div>
+
+    <div class="form-group" id="22">
+      <label for="22">Signature Date</label>
+      <input class="form-control" type="date" name="22" required>
+    </div>
+     <div class="form-group">
+      <button type="button" id="btnSubmitForm" class="btn btn-success btn-submit">Submit</button>
+    </div>
+    
+    <div class="navFooter">
+      <button type="button" class="btn btn-success btn-nav-prev">Prev</button>
+      <button type="button" id="navNext" class="btn btn-success btn-nav-next">Next</button>
+    </div>
+
+  </div>
+</form>

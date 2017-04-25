@@ -1,0 +1,45 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "ca.edumedia.codaps.pep"
+        },
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "ca.edumedia.codaps.pep"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "ca.edumedia.codaps.pep"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "ca.edumedia.codaps.pep"
+        },
+        "cordova-plugin-keyboard": {
+            "PACKAGE_NAME": "ca.edumedia.codaps.pep"
+        },
+        "cordova-plugin-secure-storage": {
+            "PACKAGE_NAME": "ca.edumedia.codaps.pep"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "ca.edumedia.codaps.pep"
+        },
+        "cordova-plugin-browsersync": {
+            "PACKAGE_NAME": "ca.edumedia.codaps.pep"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "ca.edumedia.codaps.pep"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "ca.edumedia.codaps.pep"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "ca.edumedia.codaps.pep"
+        }
+    },
+    "dependent_plugins": {}
+}

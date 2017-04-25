@@ -1,0 +1,20 @@
+machine:
+  node:
+    version: 4.4.7
+
+general:
+  branches:
+    only:
+      - master
+
+test:
+  pre:
+    - gulp lint
+
+deployment:
+  default:
+    branch: [master]
+    commands:
+      #- gulp web:delete --ci --DEV_SERVER_ADDRESS=$DEV_SERVER_ADDRESS --DEV_SERVER_USER=$DEV_SERVER_USER --DEV_SERVER_PW=$DEV_SERVER_PW
+      - gulp phonegap --ci --PGB_TOKEN=$PGB_TOKEN
+      #- gulp web --ci --DEV_SERVER_ADDRESS=$DEV_SERVER_ADDRESS --DEV_SERVER_USER=$DEV_SERVER_USER --DEV_SERVER_PW=$DEV_SERVER_PW

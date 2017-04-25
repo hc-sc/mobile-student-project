@@ -1,0 +1,108 @@
+{
+  "name": "pep",
+  "version": "0.0.1",
+  "id": "ca.edumedia.codaps.pep",
+  "title": "Public Engagement Portal Companion App",
+  "description": "Public Engagement Portal Companion App",
+  "pg_app_id": "",
+  "ga": {
+    "dev": {
+      "id": ""
+    },
+    "page": "",
+    "prod": {
+      "id": ""
+    }
+  },
+  "main": "index.html",
+  "components": {
+    "ga": false,
+    "notifications": true
+  },
+  "plugins": [
+    {
+      "name": "cordova-plugin-browsersync",
+      "source": "npm",
+      "version": "~0.1.1"
+    },
+    {
+      "name": "cordova-plugin-camera",
+      "source": "npm",
+      "version": "~2.3.1"
+    },
+    {
+      "name": "cordova-plugin-compat",
+      "source": "npm",
+      "version": "~1.1.0"
+    },
+    {
+      "name": "cordova-plugin-console",
+      "source": "npm",
+      "version": "~1.0.5"
+    },
+    {
+      "name": "cordova-plugin-file",
+      "source": "npm",
+      "version": "~4.3.1"
+    },
+    {
+      "name": "cordova-plugin-file-transfer",
+      "source": "npm",
+      "version": "~1.6.1"
+    },
+    {
+      "name": "cordova-plugin-keyboard",
+      "source": "npm",
+      "version": "~1.1.5"
+    },
+    {
+      "name": "cordova-plugin-whitelist",
+      "source": "npm",
+      "version": "~1.3.1"
+    },
+    {
+      "name": "cordova-plugin-secure-storage",
+      "source": "npm",
+      "version": "~2.6.3"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/corm0096/CODAPS-Project-I.git"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "devDependencies": {
+    "coffee-script": "^1.10.0",
+    "cordova-lib": "^5.3.3",
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-coffeelint": "^0.6.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-copy": "0.0.2",
+    "gulp-file": "^0.3.0",
+    "gulp-github-release": "^1.2.0",
+    "gulp-insert-lines": "0.0.4",
+    "gulp-jshint": "^2.0.1",
+    "gulp-jsonlint": "^1.1.2",
+    "gulp-less": "^3.1.0",
+    "gulp-lesshint": "^2.0.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-phonegap-build": "^0.1.4",
+    "gulp-replace-task": "^0.11.0",
+    "gulp-sftp": "^0.1.5",
+    "gulp-ssh": "^0.6.0",
+    "gulp-zip": "^3.2.0",
+    "jshint": "^2.9.2",
+    "merge-stream": "^1.0.0",
+    "process": "^0.11.5",
+    "run-sequence": "^1.2.1",
+    "vinyl-ftp": "^0.5.0",
+    "yargs": "^4.7.1"
+  },
+  "dependencies": {
+    "browser-sync": "^2.18.8",
+    "dompurify": "^0.8.5",
+    "jquerymy": "^1.2.8"
+  }
+}

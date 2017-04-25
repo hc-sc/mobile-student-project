@@ -1,0 +1,328 @@
+<!--<div id="fullHeader">
+	<progress id="progress-bar" min="1" max="100" value="0"></progress>
+	<div id="ballHeader"></div>
+	<div id="navTitle"></div>
+</div>
+<div class="pageHeading">
+    <h1>Compliance Violation Report</h1>
+</div>-->
+
+<form id="6125" role="form">
+
+  <div id="page-form-1" class="form-page">
+
+    <div class="form-group">
+      <div id="profileSwitch" class="text-center">
+        <label for="toggleProfile">Use saved profile?</label>
+        <input type="checkbox" id="toggleProfile" name="toggleProfile"
+               data-toggle="toggle" data-onstyle="success">
+      </div>
+    </div>
+
+    <div class="form-group" id="2">
+   
+      <label for="2">Are you reporting as</label>
+      <select data-profile="reporterType" name="2" class="form-control" id="select-2" required>
+        <option value="" disabled>------</option>
+      </select>
+    </div>
+
+    <div class="form-group" id="3">
+      <label for="3">Company Name</label>
+      <input data-profile="company" class="form-control" type="text" name="3" size="500" required>
+      <div class="my-error-tip"></div>
+    </div>
+
+    <div class="form-group" id="4">
+      <label for="4">Title/Position</label>
+      <input data-profile="position" class="form-control" type="text" name="4" size="200">
+      <div class="my-error-tip"></div>
+    </div>
+
+    <div class="form-group" id="5">
+      <label for="5">First Name</label>
+      <input data-profile="firstName" class="form-control" type="text" name="5" size="200" required>
+      <div class="my-error-tip"></div>
+    </div>
+
+    <div class="form-group" id="6">
+      <label for="6">Last Name</label>
+      <input data-profile="lastName" class="form-control" type="text" name="6" size="200" required>
+      <div class="my-error-tip"></div>
+    </div>
+
+    <div class="form-group" id="7">
+      <label for="7">Address</label>
+      <input data-profile="address" class="form-control" type="text" name="7" size="500">
+      <div class="my-error-tip"></div>
+    </div>
+
+    <div class="form-group" id="8">
+      <label for="8">City</label>
+      <input data-profile="city" class="form-control" type="text" name="8" size="100">
+      <div class="my-error-tip"></div>
+    </div>
+
+    <div class="form-group" id="9">
+      <label for="9">Country</label>
+      <select data-profile="country" data-role="country" class="form-control" name="9" id="select-9" >
+        <option value="" disabled>------</option>
+      </select>
+    </div>
+
+    <div class="form-group" id="10">
+      <label for="10">Province/State</label>
+      <select data-profile="subdivision" data-role="subdivision" class="form-control" name="10" id="select-10" >
+        <option value="" disabled>------</option>
+      </select>
+    </div>
+
+    <div class="form-group" id="11">
+      <label for="11">Postal Code/Zip</label>
+      <input data-profile="postal" class="form-control" type="text" name="11" size="10">
+      <div class="my-error-tip"></div>
+    </div>
+
+    <div class="form-group" id="12">
+      <label for="12">Telephone</label>
+      <input data-profile="phone" class="form-control" type="tel" name="12" size="20">
+      <div class="my-error-tip"></div>
+    </div>
+
+    <div class="form-group" id="13">
+      <label for="13">Email Address</label>
+      <input data-profile="email" class="form-control" type="email" name="13" size="200" required>
+      <div class="my-error-tip"></div>
+    </div>
+
+    <div class="navFooter">
+      <button type="button" class="btn btn-success btn-nav-prev">Prev</button>
+      <button type="button" id="navNext" class="btn btn-success btn-nav-next">Next</button>
+    </div>
+
+  </div>
+
+  <div id="page-form-2" class="form-page">
+
+    <div class="form-group" id="15">
+      <label for="15">Type of Violator</label>
+      <select class="form-control" name="15" id="select-15"  required>
+        <option value="" disabled>------</option>
+      </select>
+    </div>
+
+    <div class="form-group" id="15a">
+      <label for="15a">Other Type of Violator</label>
+      <input class="form-control" type="email" name="15a" size="200">
+      <div class="my-error-tip"></div>
+    </div>
+
+    <div class="form-group" id="16">
+      <label for="16">Company Name</label>
+      <input class="form-control" type="email" name="16" size="500" required>
+      <div class="my-error-tip"></div>
+    </div>
+
+    <div class="form-group" id="17">
+      <label for="17">First Name</label>
+      <input class="form-control" type="text" name="17" size="200" required>
+      <div class="my-error-tip"></div>
+    </div>
+
+    <div class="form-group" id="18">
+      <label for="18">Last Name</label>
+      <input class="form-control" type="text" name="18" size="200" required>
+      <div class="my-error-tip"></div>
+    </div>
+
+    <div class="form-group" id="19">
+      <label for="19">Address</label>
+      <input class="form-control" type="text" name="19" size="500">
+      <div class="my-error-tip"></div>
+    </div>
+
+    <div class="form-group" id="20">
+      <label for="20">City</label>
+      <input class="form-control" type="text" name="20" size="100">
+      <div class="my-error-tip"></div>
+    </div>
+
+    <div class="form-group" id="21">
+      <label for="21">Country</label>
+      <select data-role="country" class="form-control" name="21" id="select-21" >
+        <option value="" disabled>------</option>
+      </select>
+    </div>
+
+    <div class="form-group" id="22">
+      <label for="10">Province/State</label>
+      <select data-role="subdivision" class="form-control" name="10" id="select-22" >
+        <option value="" disabled>------</option>
+      </select>
+    </div>
+
+    <div class="form-group" id="23">
+      <label for="23">Postal Code/Zip</label>
+      <input class="form-control" type="text" name="23" size="10">
+      <div class="my-error-tip"></div>
+    </div>
+
+    <div class="form-group" id="24">
+      <label for="24">Telephone</label>
+      <input class="form-control" type="tel" name="24" size="20">
+      <div class="my-error-tip"></div>
+    </div>
+
+    <div class="navFooter">
+      <button type="button" class="btn btn-success btn-nav-prev">Prev</button>
+      <button type="button" id="navNext" class="btn btn-success btn-nav-next">Next</button>
+    </div>
+
+  </div>
+
+  <div id="page-form-3" class="form-page">
+
+    <div class="form-group" id="25">
+      <label for="25">Is the product registered in Canada?</label>
+      <select class="form-control" name="25" id="select-25"  required>
+        <option value="" disabled>------</option>
+      </select>
+    </div>
+
+    <div class="form-group" id="26">
+      <label for="26">Product Name</label>
+      <input class="form-control" type="text" name="26" size="500">
+      <div class="my-error-tip"></div>
+    </div>
+
+    <div class="form-group" id="27">
+      <label for="27">Registration Number</label>
+      <input class="form-control" type="text" name="27" size="20">
+      <div class="my-error-tip"></div>
+    </div>
+
+    <div class="form-group" id="28">
+      <label for="28">Active Ingredients</label>
+      <textarea class="form-control" rows="4" cols="50" name="28" form="6125" size="500"></textarea>
+      <div class="my-error-tip"></div>
+    </div>
+
+    <div class="form-group" id="29">
+      <label for="29">Lot / Batch Number</label>
+      <input class="form-control" type="text" name="29" size="500">
+      <div class="my-error-tip"></div>
+    </div>
+
+    <div class="form-group">
+    	<button type="button" id="btnNewProd" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-plus-sign"></span> Add new Product
+        </button>
+    </div>
+
+    <div class="navFooter">
+      <button type="button" class="btn btn-success btn-nav-prev">Prev</button>
+      <button type="button" id="navNext" class="btn btn-success btn-nav-next">Next</button>
+    </div>
+
+  </div>
+
+  <div id="page-form-4" class="form-page">
+
+    <div class="form-group" id="31">
+      <label for="31">Violation Related to</label>
+      <select class="form-control" name="31" id="select-31"  required>
+        <option value="" disabled>------</option>
+      </select>
+    </div>
+
+    <div class="form-group" id="32">
+      <label for="32">Violation Date</label>
+      <input class="form-control" type="date" name="32" size="10" required>
+      <div class="my-error-tip"></div>
+    </div>
+
+    <div class="form-group" id="33">
+      <label for="33">Type of violation</label>
+      <select class="form-control" name="33" id="select-33"  required>
+        <option value="" disabled>------</option>
+      </select>
+    </div>
+
+    <div class="form-group" id="34">
+      <label for="34">Impact of suspected violation</label>
+      <select class="form-control" name="34" id="select-34"  required>
+        <option value="" disabled>------</option>
+      </select>
+    </div>
+
+    <div class="form-group" id="34a">
+      <label for="34">Other impact of suspected violation</label>
+      <input class="form-control" type="text" name="34" size="200">
+      <div class="my-error-tip"></div>
+    </div>
+
+    <div class="form-group" id="35">
+      <label for="35">Is the suspected violation still occurring?</label>
+      <select class="form-control" name="35" id="select-35"  required>
+        <option value="" disabled>------</option>
+      </select>
+    </div>
+
+    <div class="form-group" id="36">
+      <label for="36">Other regulatory agencies that have been notified</label>
+      <input class="form-control" type="text" name="36" size="150">
+      <div class="my-error-tip"></div>
+    </div>
+
+    <div class="form-group" id="37">
+		<label for="37">Describe the violation in detail</label>
+      <i class= "glyphicon glyphicon-info-sign" id="btnHelp"></i>
+      <textarea class="form-control" rows="6" cols="50" name="37" form="6125" size="4000"></textarea>
+      <div class="my-error-tip"></div>
+    </div>
+    <div class="navFooter">
+      <button type="button" class="btn btn-success btn-nav-prev">Prev</button>
+      <button type="button" id="navNext" class="btn btn-success btn-nav-next">Next</button>
+    </div>
+
+  </div>
+
+  <div id="page-form-5" class="form-page">
+
+    <div id="imageAttachments" class="container-fluid">
+    </div>
+    <div class="form-group">
+      <button id="btnAttach" class="btn btn-success">Attachments</button>
+      <!--<button id="22" class="btn btn-success">Add more Attachments</button>-->
+    </div>
+
+    <div class="form-group" id="40">
+      <label for="40">I authorize Health Canada to provide my contact information to the manufacturer / importer / distributor or user, in order to facilitate verification of compliance, if necessary.</label>
+      <input class="form-control" type="checkbox" name="40" required>
+      <div class="my-error-tip"></div>
+    </div>
+
+    <div class="form-group" id="41">
+      <label for="41">I authorize Health Canada to release the contents of this report and refer my complaint / incident and product details to another organization outside Health Canada to facilitate verification of compliance, if necessary</label>
+      <input class="form-control" type="checkbox" name="41" required>
+      <div class="my-error-tip"></div>
+    </div>
+
+    <div class="form-group" id="42">
+      <label for="42">I have read, understood and agree with the</label> 
+      <!--<button type="button" class="btn" id="btnShowPrivacy">Privacy Notice Statement </button>-->
+      <input class="form-control" type="checkbox" name="42" required>
+      <div class="my-error-tip"></div>
+    </div>
+
+    <div class="form-group">
+      <button type="button" id="btnSubmitForm" class="btn btn-primary btn-submit">Submit</button>
+    </div>
+
+    <div class="navFooter">
+      <button type="button" class="btn btn-success btn-nav-prev">Prev</button>
+      <button type="button" id="navNext" class="btn btn-success btn-nav-next">Next</button>
+    </div>
+
+  </div>
+</form>

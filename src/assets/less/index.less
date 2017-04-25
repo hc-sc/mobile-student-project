@@ -1,0 +1,735 @@
+/*
+ _____ ___________  ___  ______  _____
+/  __ \  _  |  _  \/ _ \ | ___ \/  ___|
+| /  \/ | | | | | / /_\ \| |_/ /\ `--.
+| |   | | | | | | |  _  ||  __/  `--. \
+| \__/\ \_/ / |/ /| | | || |    /\__/ /
+ \____/\___/|___/ \_| |_/\_|    \____/
+
+Public engagement Portal
+April 18, 2017
+ */
+
+@base-color: rgba(51, 80, 117, 1.00);
+@border-color: #000000;
+@tile-bg-color: #e8f1ff;
+@pmra-green: #27B14C;
+@image-base-url: '../../';
+@border-radius: 2px;
+@background-color: #24313C;
+
+
+@media screen and (min-width: 800px) {
+  body {
+    margin: 0em;
+    background-color: red;
+  }
+
+
+  #main-page {
+
+
+    .tile {
+      border: 4px solid #24313C;
+      padding: 10px;
+      background-color: #27B14C;
+      background-repeat: no-repeat;
+      background-size: 80% 80%;
+      background-position: 50% 85%;
+      max-height: 20em;
+      height: 20em;
+    }
+
+    p {
+      width: 100%;
+      font-size: 48pt;
+      color: #FFF;
+    }
+  }
+}
+
+body {
+  margin: 0em;
+  background-color: #24313C;
+}
+
+
+h4 {
+  /*color: @base-color;*/
+  color: white;
+}
+
+/* Header bar */
+header {
+  border-bottom: 2px solid @base-color;
+  margin-bottom: 0.5em;
+  background-color: @pmra-green;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+
+
+  .navmenu-fixed-right {
+    @media screen and (min-width: 600px) {
+      float: right;
+    }
+  }
+
+  .container .row {
+
+    div:first-child {
+      padding: 0px;
+    }
+
+    div:nth-child(2) {
+      padding: 0.4em;
+    }
+
+    div #btnMenu,
+    div #btnBack {
+      float: left;
+      border: 0px;
+      outline: 0px;
+      background-color: #27B14C;
+      color: white;
+
+      @media screen and (min-width: 600px) {
+        font-size: 24pt;
+      }
+
+      &::after {
+        clear: left;
+      }
+    }
+  }
+
+  h4 {
+    color: white;
+
+    @media screen and (min-width: 600px) {
+      font-size: 24pt;
+    }
+  }
+}
+
+/* Ball-and-chain styles */
+
+
+#fullHeader {
+  top: 0.75em;
+  position: relative;
+  width: 90%;
+  margin-left: 0em auto 0em 0.5em;
+  background-color: #24313C;
+  margin-top: 5px;
+
+  #progress-bar {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 98%;
+    padding-left: 2.5%;
+    color: white;
+    height: 2px;
+    margin-top: 23px;
+
+    &::-webkit-progress-bar {
+      background: white;
+    }
+
+    &::-webkit-progress-value {
+      background: green;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+
+  #navTitle {
+    position: absolute;
+    width: 102%;
+    text-shadow: 0.5px 0.5px black;
+
+    .navbox {
+      position: absolute;
+      font-size: 0.5em;
+      text-align: center;
+      width: 10%;
+      transform: translateX(-2px);
+
+      &[id^="navtext-"] {
+        transition: all 0.4s ease-in-out;
+
+        &.text-enlarge {
+          transform: scale(2) translate(-1.7em, -3.25em);
+          width: 25%;
+        }
+      }
+    }
+  }
+
+
+  #ballHeader {
+    height: 20px;
+
+    [id^="navspan-"] {
+      position: absolute;
+      height: 10px;
+      width: 10px;
+      border-radius: 100%;
+      border: 13px solid white;
+      color: white;
+      position: absolute;
+      left: 0;
+      top: 12px;
+      transition: all 0.4s ease-in-out;
+
+      &.make-green {
+        border-color: green;
+      }
+
+      &.enlarge {
+        transform: scale(2.0);
+      }
+    }
+  }
+}
+
+/* navigation css */
+
+.current {
+  background-color: #27B14C;
+  color: #FFFFFF;
+}
+
+section[data-role="page"] {
+  margin-top: 3em;
+
+  .pageHeading {
+    margin-top: 4.25em;
+    background-color: #27B14C;
+    position: absolute;
+    left: 0;
+    width: 70%;
+    border-radius: 0px 30px 30px 0px;
+    border-collapse: separate;
+
+    h1 {
+      color: #FFFFFF;
+    }
+  }
+
+  #profileSwitch {
+    padding-top: 1em;
+  }
+
+  &#profile-page,
+  &#history-page,
+  &#about-page {
+
+    .pageHeading {
+      margin-top: 2.5em;
+    }
+
+    .infoBody {
+      padding-top: 2.5em;
+    }
+  }
+
+  &#main-page {
+    padding-top: 1em;
+  }
+}
+
+/*Language Selection Screen*/
+#intro-page {
+  z-index: 1001;
+  background-color: #24313C;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  #hcHeaderImage {
+    border-bottom: 2px solid @base-color;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    width: 100vw;
+    height: 3em;
+    padding: 0.25em;
+
+    @media screen and (min-width: 600px) {
+      margin-top: 18px;
+    }
+
+
+
+    img {
+      width: 100%;
+      height: 2.5em;
+    }
+  }
+
+  h1 {
+    color: #E3E3E3;
+  }
+
+  #english {
+    width: 100%;
+    height: 50px;
+    background-color: #27B14C;
+    color: #24313C;
+  }
+
+  #french {
+    width: 100%;
+    height: 50px;
+    background-color: #E3E3E3;
+    color: #24313C;
+  }
+}
+/*Profile page */
+
+#profile-page {
+
+  #profile {
+    margin-top: 35%;
+  }
+
+  .form-group {
+    text-align: left;
+
+    i {
+      color: @pmra-green;
+    }
+
+    .btn-group .btn.active {
+      background-color: darken(@pmra-green, 25%);
+    }
+
+    #imageAttachments {
+      width: 100%;
+      max-height: 25vh;
+      text-align: center;
+
+      img {
+        margin: 0.5em auto;
+        width: auto !important;
+        max-height: 5em !important;
+      }
+    }
+  }
+
+  input {
+    background-color: white;
+    color: black;
+  }
+}
+
+#profile-load {
+  background-color: #24313C;
+  //  width: 100%;
+  //  height: 100%;
+  //  position: absolute;
+  //  top: 0px;
+  //  left: 0px;
+  //padding-top: 15%;
+  h1 {
+    color: white;
+  }
+
+  p {
+    color: white;
+  }
+
+  #btnAcceptProfile {
+    background-color: white;
+    color: #24313C;
+  }
+
+  #btnDeclineProfile {
+    background-color: white;
+    color: #24313C;
+  }
+}
+
+#main-menu {
+  background-color: #24313C;
+}
+
+// Info Page
+
+#about-page {
+
+  .infoBody {
+    margin-top: 27%;
+  }
+}
+
+/* Tiles */
+
+#main-page {
+  //padding-top: 15%;
+  .tile {
+    border: 4px solid #24313C;
+    padding: 10px;
+    background-color: #27B14C;
+    background-repeat: no-repeat;
+    background-size: 60% 60%;
+    background-position: 50% 85%;
+    max-height: 30vh;
+    height: 30vh;
+
+    @media screen and (min-width: 600px) {
+      margin-top: 10px;
+    }
+
+    &#tile-1 {
+      background-image: url(../images/icons-white-svg/information-SI-icon.svg);
+    }
+
+    &#tile-2 {
+      background-image: url(../images/icons-white-svg/compliance-VR-icon.svg);
+    }
+
+    &#tile-3 {
+      background-image: url(../images/icons-white-svg/consultation-comment-icon.svg);
+    }
+
+    &#tile-4 {
+      background-image: url(../images/icons-white-svg/reading-room-request-icon.svg);
+    }
+
+    &#tile-5 {
+      background-image: url(../images/icons-white-svg/notice-of-objection-icon.svg);
+    }
+
+    &#tile-6 {
+      background-image: url(../images/icons-white-svg/voluntary-IR-icon.svg);
+    }
+
+    &.disabled {
+      cursor: default;
+      opacity: 0.65;
+      filter: alpha(opacity=65);
+      box-shadow: none;
+      color: #333;
+      background-color: darkgray;
+      pointer-events: none;
+
+      a {
+        pointer-events: none;
+      }
+    }
+
+
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+
+      p {
+        width: 100%;
+        font-size: 14pt;
+        color: #FFF;
+
+        @media screen and (min-width: 600px) {
+          font-size: 26pt;
+        }
+      }
+    }
+  }
+}
+
+
+/* Page sections */
+section {
+  &:extend(.clearfix all);
+  margin: 0em auto;
+  padding-left: 6%;
+  padding-right: 6%;
+  color: white;
+
+
+  &.active-page {
+    animation: fade 0.6s both;
+    animation-fill-mode: forwards;
+    display: block;
+    z-index: 1000;
+  }
+
+  &.inactive-page {
+    display: none;
+    z-index: 10;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.5;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-on {
+    0% {
+      transform: translate3d(-100%,0,0);
+    }
+
+    100% {
+      transform: translate3d(0,0,0);
+    }
+  }
+
+  @keyframes slide-off {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(100%, 0, 0);
+    }
+  }
+
+  #Loading {
+    .modal-body {
+      p {
+        background-image: url(../images/animated.svg)
+      }
+    }
+  }
+
+  .form-group {
+    text-align: left;
+  }
+
+  .checkbox {
+    font-size: 20px;
+  }
+  /* Forms */
+  form {
+    margin: 9em auto 1em;
+
+    a {
+      color: #27B14C;
+      text-decoration: underline;
+    }
+
+    /*#fullHeader {
+      top: 16px;
+      position: fixed;
+      width: 80%;
+      margin-left: 10%;
+
+      #progress-bar {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 98%;
+        padding-left: 2.5%;
+        color: white;
+        height: 2px;
+        margin-top: 23px;
+
+        &::-webkit-progress-value {
+          background: green;
+          transition: all 0.4s ease-in-out;
+        }
+
+        &::-webkit-progress-bar {
+          background: white;
+        }
+      }
+
+      #ballHeader {
+        height: 20px;
+
+        span[id^="navspan-"] {
+          position: absolute;
+          height: 10px;
+          width: 10px;
+          border-radius: 100%;
+          border: 13px solid white;
+          color: white;
+          position: absolute;
+          left: 0;
+          top: 12px;
+          transition: all 0.4s ease-in-out;
+
+          &.make-green {
+            border-color: green;
+          }
+
+          &.enlarge {
+            transform: scale(2.0);
+          }
+        }
+      }
+
+
+      #navTitle {
+        position: absolute;
+        width: 100%;
+
+        span.navbox {
+          position: absolute;
+          top: 20px;
+          font-size: 0.5em;
+          text-align: center;
+          width: 5%;
+          padding-left: 1%;
+          padding-right: 1%;
+
+          &.text-enlarge {
+            transform: scale(2.0) translate(0,20px);
+          }
+        }
+      }
+    }*/
+
+    .form-page {
+      padding-bottom: 2em;
+
+      .form-group {
+
+
+        .form-control {
+          &[type="checkbox"] {
+            height: 2em;
+            width: 2em;
+            margin: auto;
+          }
+
+          &:focus {
+            border-color: @pmra-green;
+          }
+        }
+
+        .btn-incident {
+          width: 100%;
+          text-align: center;
+          display: table;
+          margin-bottom: 1em;
+
+          img {
+            width: 25%;
+            vertical-align: middle;
+            display: table-cell;
+          }
+
+          p {
+            vertical-align: middle;
+            text-align: center;
+            display: block;
+            width: 100%;
+            height: 3em;
+            padding-top: 1em;
+            font-size: 1.5em;
+          }
+        }
+      }
+
+
+
+      .btn-nav-next {
+        float: right;
+        width: 10rem;
+        bottom: 0px;
+        right: 0px;
+        z-index: 666;
+        height: 5rem;
+        margin-bottom: 10px;
+      }
+
+      .btn-nav-prev {
+        float: left;
+        width: 10rem;
+        bottom: 0px;
+        left: 0px;
+        z-index: 666;
+        height: 5rem;
+        margin-bottom: 10px;
+      }
+    }
+
+    #btnSubmitForm {
+      width: 100%;
+      background: #27B14C;
+      color: white;
+      height: 5rem;
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+
+  &#submit-success-page {
+    h1 {
+      color: white;
+    }
+  }
+  /* History Page */
+  &#history-page {
+
+    #submissionHeader {
+      margin-top: 35%;
+    }
+
+    .subList {
+      margin-top: 10%;
+    }
+
+    .submissionName {
+      color: white;
+    }
+
+    .submissionNum {
+      font-size: 10px;
+      color: white;
+      padding-top: 0.5%;
+    }
+
+    .list-group-item {
+      height: 20%;
+      background-color: #27B14C;
+      border: 2px solid #24313C;
+    }
+  }
+}
+
+/* Footer */
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 666;
+  padding: 0.75em 0px;
+  background-color: white;
+}
+
+/* Utility classes */
+
+.hidden {
+  display: none;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0em;
+  content: ' ';
+  clear: both;
+  height: 0em;
+}
+
+
+.img-attachment {
+  height: 15em;
+  max-height: 15em;
+  margin-bottom: 1em;
+}

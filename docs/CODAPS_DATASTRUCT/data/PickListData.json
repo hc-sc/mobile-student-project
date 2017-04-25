@@ -1,0 +1,412 @@
+{
+  "english": {
+    "6027": {
+      "6": [
+        "General Public / Consumer",
+        "Media",
+        "Government - Federal",
+        "Government - Provincial / Territorial",
+        "Government - Munucupal",
+        "Government (Foreign)",
+        "Grower / Farmer",
+        "Pest Control Applicator",
+        "Lawyer",
+        "Non-Government Organization (NGO)",
+        "Other (Specify)"
+      ],
+      "13": "COUNTRY FROM ISO LIST",
+      "14": "SUBDIVISION FROM ISO LIST",
+      "19": [
+        "Animal Health",
+        "Compliance",
+        "Environment",
+        "GROU Program",
+        "Human Health",
+        "Pesticide Regulations",
+        "Publications",
+        "Regulatory Advice",
+        "Pesticide safety",
+        "Other (specify)"
+      ]
+    },
+    "6125": {
+      "2": [
+        "Individual",
+        "Company Representative"
+      ],
+      "9": "COUNTRY FROM ISO LIST",
+      "10": "SUBDIVISION FROM ISO LIST",
+      "15": [
+        "Company",
+        "Individual",
+        "Unknown",
+        "Other (specify)"
+      ],
+      "21": "COUNTRY FROM ISO LIST",
+      "22": "SUBDIVISION FROM ISO LIST",
+      "25": [
+        "Yes",
+        "No",
+        "Unknown"
+      ],
+      "31": [
+        "Unregistered Product",
+        "Misuse of Product",
+        "Unknown"
+      ],
+      "33": [
+        "Sales / Distrobution",
+        "Use",
+        "Manufacturing",
+        "Advertising",
+        "Importation",
+        "Other (specify)"
+      ],
+      "34": [
+        "Health",
+        "Environment",
+        "Other (Specify)"
+      ],
+      "35": [
+        "Yes",
+        "No",
+        "Unknown"
+      ]
+    },
+    "6500": {
+      "3": [
+        "Academic",
+        "Growers Group",
+        "Grower / Farmer",
+        "Industry",
+        "Non-Government Organization (NGO)",
+        "Other (Specify)",
+        "Public",
+        "Registrant / Applicant / Representative",
+        "User Group",
+        "Government - Federal",
+        "Government - Provincial / Territorial",
+        "Government - Munucupal",
+        "Government (Foreign)",
+        "Media"
+      ],
+      "10": "COUNTRY FROM ISO LIST",
+      "11": "SUBDIVISION FROM ISO LIST",
+      "16": [
+        "Chemistry",
+        "Dietary exposure",
+        "Environment",
+        "Exposure of Bystanders / Workers",
+        "Health (Human/Animal)",
+        "Measures to minimize risk",
+        "Other (Specify)",
+        "Pollinators",
+        "Proposed Measures",
+        "Residues in Water and Food",
+        "Toxicology",
+        "Usefulness / Efficacy of Pesticides (Value)"
+      ]
+    },
+    "7000": {
+      "6": "COUNTRY FROM ISO LIST",
+      "7": "SUBDIVISION FROM ISO LIST",
+      "12": [
+        "Media",
+        "Other organization",
+        "Pesticide manufacturer",
+        "Public"
+      ],
+      "13": [
+        "I wish to inspect data for my own use only",
+        "I wish to inspect data at the request of [blank box] to whom I will be reporting",
+        "Other"
+      ],
+      "14": [
+        "Possibility of filing a notice of objection, within 60 days of a final regulatory decision",
+        "Other"
+      ],
+      "15.1": [
+        "Active Ingredient",
+        "Registration Number",
+        "End-use product"
+      ]
+    },
+    "7004": {
+      "8": "COUNTRY FROM ISO LIST",
+      "9": "SUBDIVISION FROM ISO LIST",
+      "16": [
+        "Granting registration",
+        "Denying registration",
+        "Granting an amendment of a registration"
+      ],
+      "17": [
+        "Confirming registration through re-evaluation",
+        "Cancelling registration through re-evaluation",
+        "Ammending registration through re-evaluation"
+      ],
+      "19": [
+        "Health Risk Assessment (Toxicology, Food Residue, Occupational Exposure)",
+        "Environmental Risk Assessment (Environmental Fate, Environmental Toxicology)",
+        "Value and Efficacy Assessments (Crop Tolerance, Value"
+      ]
+    },
+    "7011": {
+      "2": [
+        "Domestic Animal",
+        "Environment",
+        "Human Health"
+      ],
+      "5": [
+        "Animal Owner",
+        "Medical Professional",
+        "Other (Specify)",
+		"The person who experienced the incident",
+		"Veterinary Professional",
+		"Witness"
+      ],
+      "12": [
+        "Female",
+        "Male",
+        "Other"
+      ],
+      "13": [
+        "Bird",
+        "Cat",
+        "Cow",
+        "Dog",
+        "Fish",
+        "Other (Specify)",
+        "Pig Horse",
+        "Poultry",
+        "Sheep"
+      ],
+      "17": [
+        "Fresh water",
+        "Land",
+        "Salt water"
+      ],
+      "19": [
+        "Eye",
+        "Oral",
+        "Respiratory (breathing)",
+        "Skin",
+        "Unknown"
+      ],
+      "20": [
+        "No",
+        "Yes",
+        "Unknown"
+      ]
+    }
+  },
+  "french": {
+	  "6027": {
+      "6": [
+        "Public / Consommateur",
+        "Médias",
+        "Gouvernement - Fédéral",
+        "Gouvernement - Provincial / Territorial",
+        "Gouvernement - Municipal",
+        "Government (Étranger)",
+        "Producteur / Fermier ",
+        "Préposé à l'application",
+        "Avocat",
+        "Organisation non gouvernementale (ONG)",
+        "Autre (préciser)"
+      ],
+      "13": "COUNTRY FROM ISO LIST",
+      "14": "SUBDIVISION FROM ISO LIST",
+      "19": [
+        "Santé animale",
+        "Conformité",
+        "Environnement",
+        "Programme d'importation pour approvisionnement personnel à la demande des agriculteurs",
+        "Santé humaine",
+        "Réglementation des pesticides",
+        "Publications",
+        "Conseils réglementaires",
+        "Sécurité des pesticides",
+        "Autre (préciser)"
+      ]
+    },
+    "6125": {
+      "2": [
+        "Individu",
+        "Représentant d’entreprise"
+      ],
+      "9": "COUNTRY FROM ISO LIST",
+      "10": "SUBDIVISION FROM ISO LIST",
+      "15": [
+        "Entreprise",
+        "Individu",
+        "Inconnu",
+        "Autre (préciser)"
+      ],
+      "21": "COUNTRY FROM ISO LIST",
+      "22": "SUBDIVISION FROM ISO LIST",
+      "25": [
+        "Oui",
+        "Non",
+        "Inconnu"
+      ],
+      "31": [
+        "Produits non homologués",
+        "Utilisation non-conforme",
+        "Inconnu"
+      ],
+      "33": [
+        "Vente / distribution",
+        "Utilisation",
+        "Fabrication",
+        "Publicité",
+        "Importation",
+        "Autre (préciser)"
+      ],
+      "34": [
+        "Santé",
+        "Environnement",
+        "Autre (préciser)"
+      ],
+      "35": [
+        "Oui",
+        "Non",
+        "Inconnu"
+      ],
+      "40": [
+        "Oui",
+        "Non"
+      ],
+      "41": [
+        "Oui",
+        "Non"
+      ]
+    },
+    "6500": {
+      "3": [
+        "Établissement d'enseignement",
+        "Association de producteurs",
+        "Producteur / Fermier",
+        "Industrie",
+        "Organisation non gouvernementale",
+        "Autre (préciser)",
+        "Public",
+        "Titulaire, demandeur ou représentant",
+        "Groupe d'utilisateurs",
+        "Gouvernement - Fédéral",
+        "Gouvernement - Provincial / Territorial",
+        "Gouvernement - Municipal",
+        "Gouvernement (Étranger)",
+        "Médias"
+      ],
+      "10": "COUNTRY FROM ISO LIST",
+      "11": "SUBDIVISION FROM ISO LIST",
+      "16": [
+        "Caractéristiques chimiques",
+        "Exposition alimentaire",
+        "Environnement",
+        "Exposition des non-utilisateurs ou des travailleurs",
+        "Santé (humaine et animale)",
+        "Mesures de réduction des risques",
+        "Autre (préciser)",
+        "Pollinisateurs",
+        "Mesures proposées",
+        "Résidus dans l'eau et les aliments",
+        "Toxicologie",
+        "Utilité et efficacité (valeur) des pesticides"
+      ]
+    },
+    "7000": {
+      "6": "COUNTRY FROM ISO LIST",
+      "7": "SUBDIVISION FROM ISO LIST",
+      "12": [
+        "Média",
+        "Autre organisation",
+        "Fabricant de pesticide",
+        "Public"
+      ],
+      "13": [
+        "Média",
+        "Autre organisation",
+        "Fabricant de pesticide",
+        "Public"
+      ],
+      "14": [
+        "Possibilité de remplir un avis d'opposition, dans les 60 jours suivant la date de décision d'homologation définitive",
+        "Autre"
+      ],
+      "15.1": [
+        "Matière active",
+        "Numéro d'homologation",
+        "Préparation commerciale"
+      ]
+    },
+    "7004": {
+      "8": "COUNTRY FROM ISO LIST",
+      "9": "SUBDIVISION FROM ISO LIST",
+      "16": [
+        "Homologation accordée",
+        "Homologation refusée",
+        "Modification de l'homologation accordée"
+      ],
+      "17": [
+        "Confirmation de l'homologation après réévaluation",
+        "Révocation de l'homologation après réévaluation",
+        "Modification de l'homologation après réévaluation"
+      ],
+      "19": [
+        "Évaluation des risques sanitaires (toxicologie, résidus dans les aliments, exposition professionnelle)",
+        "Évaluation des risques pour l'environnement (devenir dans l'environnement, toxicologie de l'environnement)",
+        "Évaluation de la valeur et de l'efficacité (tolérance des cultures, valeur)"
+      ]
+    },
+    "7011": {
+      "2": [
+        "Animal domestique",
+        "Environnement",
+        "Santé humaine"
+      ],
+      "5": [
+        "Propriétaire de l'animal",
+        "Professionnel de la santé",
+        "Autre (préciser)",
+		"Personne touchée par l'incident",
+		"Vétérinaire professionnel",
+		"Témoin" 
+      ],
+      "12": [
+        "Femelle",
+        "Mâle",
+        "Autre"
+      ],
+      "13": [
+        "Oiseau",
+        "Chat",
+        "Vache",
+        "Chien",
+        "Poisson",
+        "Autre (préciser)",
+        "Porc ou cheval",
+        "Volaille",
+        "Mouton"
+      ],
+      "17": [
+        "Eau douce",
+        "Terre",
+        "Eau salée"
+      ],
+      "19": [
+        "Oculaire",
+        "Orale",
+        "Pulmonaire (respiration)",
+        "Peau",
+        "Inconnu"
+      ],
+      "20": [
+        "Non",
+        "Oui",
+        "Inconnu"
+      ]
+    }
+  }
+  }
+

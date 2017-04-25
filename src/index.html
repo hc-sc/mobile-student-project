@@ -1,0 +1,323 @@
+﻿<!--
+     _____ ___________  ___  ______  _____
+    /  __ \  _  |  _  \/ _ \ | ___ \/  ___|
+    | /  \/ | | | | | / /_\ \| |_/ /\ `--.
+    | |   | | | | | | |  _  ||  __/  `--. \
+    | \__/\ \_/ / |/ /| | | || |    /\__/ /
+     \____/\___/|___/ \_| |_/\_|    \____/
+
+    Public engagement Portal
+    April 18, 2017
+    -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+  <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="lib/jasny-bootstrap/css/jasny-bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="lib/bootstrap-toggle/bootstrap-toggle.min.css">
+  <link rel="stylesheet" type="text/css" href="lib/bootstrap-datepicker/css/bootstrap-datepicker3.css">
+  <link rel="stylesheet" type="text/css" href="lib/my/select2.min.css" />
+  <link rel="stylesheet" type="text/css" href="lib/met/css/met.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/index.css" />
+  <script type="text/javascript" src="lib/my/sugar-full.development.js"></script>
+  <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="lib/my/jquerymy.min.js"></script>
+  <script type="text/javascript" src="lib/my/select2.full.min.js"></script>
+  <script type="text/javascript" src="lib/dompurify/dist/purify.min.js"></script>
+  <script type="text/javascript" src="lib/x2js/xml2json.min.js"></script>
+  <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="lib/jasny-bootstrap/js/jasny-bootstrap.min.js"></script>
+  <script type="text/javascript" src="lib/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+  <script type="text/javascript" src="lib/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+  <script type="text/javascript" src="lib/jquery.ns-autogrow/dist/jquery.ns-autogrow.min.js"></script>
+  <script type="text/javascript" src="lib/hammer/hammer.js"></script>
+  <script type="text/javascript" src="lib/met/js/met.js"></script>
+  <script type="text/javascript" src="assets/js/Paginator.js"></script>
+  <script type="text/javascript" src="assets/js/BallHeader.js"></script>
+  <script type="text/javascript" src="assets/js/index.js"></script>
+  <script type="text/javascript" src="cordova.js"></script>
+  <title>PMRA Public Engagement Portal</title>
+</head>
+<body class="text-center">
+  <!--LANGUAGE SELECTION PAGE-->
+  <section data-role="page" id="intro-page" class="inactive-page">
+    <div id="hcHeaderImage" class="text-center">
+      <!--TODO: REPLACE WITH HEALTH CANADA LOGO-->
+      <img src="lib/met/images/goc-gdc-col-en.svg" alt="Health Canada - Santé Canada">
+    </div>
+    <div class="text-center">
+      <h1> Select a language </h1>
+      <h1> Sélectionner une langue </h1>
+      <input type="button" id="english" class="btn btn-info btn-block" value="English">
+      <input type="button" id="french" class="btn btn-info btn-block" value="Fran&#231;ais">
+    </div>
+    <footer class="text-center">
+      <div class="container">
+        <img src="assets/images/canada-col.svg" onerror="this.src = 'assets/images/canada-col.png'" alt="Symbol of the Government of Canada | Symbole du gouvernement du Canada">
+      </div>
+    </footer>
+  </section>
+  <!--/LANGUAGE SELECTION PAGE-->
+  <!--HEADER-->
+  <header class="text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-2">
+          <button id="btnMenu" class="navbar-brand btn btn-primary platform-android hidden" data-toggle="offcanvas" data-target="#main-menu">
+            <span class="glyphicon glyphicon-menu-hamburger"></span>
+          </button>
+          <button id="btnBack" class="navbar-brand btn btn-primary platform-ios hidden">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </button>
+        </div>
+        <div class="col-xs-8 text-center">
+          <h4 id="main-title">Public Engagement Portal</h4>
+        </div>
+        <div class="col-xs-2">
+          <button id="btnMenu" class="navbar-brand btn btn-primary platform-ios hidden" data-toggle="offcanvas" data-target="#main-menu" style>
+            <span class="glyphicon glyphicon-menu-hamburger"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--/HEADER-->
+  <!--MAIN MENU-->
+  <nav id="main-menu" class="navmenu navmenu-default offcanvas">
+    <a class="navmenu-brand">&nbsp;</a>
+    <div class="container text-right">
+      <a id="btnCloseMenu" href="javascript:void(0)">
+        <span class="glyphicon glyphicon-remove"></span>
+      </a>
+    </div>
+    <ul class="nav navmenu-nav">
+      <li><a id="btnMenuEn" href="javascript:void(0)" class="btnMenuLang inactive" value="english" lang="en">English</a></li>
+      <li><a id="btnMenuFr" href="javascript:void(0)" class="btnMenuLang inactive" value="french" lang="fr">Fran&#231;ais</a></li>
+      <li><a id="btnMenuHome" href="#main-page" class="active btn-menu current">Home</a></li>
+      <li><a id="btnMenuProfile" href="#profile-page" class="inactive btn-menu">Profile</a></li>
+      <li><a id="btnMenuAbout" href="#about-page" class="inactive btn-menu">About</a></li>
+      <li><a id="btnMenuHistory" href="#history-page" class="inactive btn-menu">History</a></li>
+    </ul>
+  </nav>
+  <!--/MAIN MENU-->
+  <!--MAIN PAGE-->
+  <main class="container-fluid">
+
+    <section data-role="page" id="profile-load" class="container-fluid inactive-page">
+      <div class="text-center">
+        <h1 id="intro-title">Introduction</h1>
+        <p id="intro-content">Welcome to the Pesticide Engagement Portal Companion App. With this application, you can engage with the Pest Management Regulatory Agency. Would you like to make a profile now? This is entirely optional, saved only on your device, and you can change the data at any point.</p>
+        <input type="button" id="btnAcceptProfile" class="btn btn-info " value="Yes">
+        <input type="button" id="btnDeclineProfile" class="btn btn-info" value="No">
+      </div>
+    </section>
+
+    <section data-role="page" id="profile-page" class="container-fluid inactive-page">
+      <div class="pageHeading">
+        <h1>Profile</h1>
+      </div>
+      <form id="profile">
+        <div class=form-group>
+          <label id="label-2" for="profile-2">Are you reporting as</label>
+          <select data-profile="reporterType" id="profile-2" name="2" class="form-control" required></select>
+        </div>
+        <div class="form-group" id="compName">
+          <label id="label-3" for="profile-3">Company Name:</label>
+          <input data-profile="company" type="text" class="form-control" id="profile-3" size="500">
+        </div>
+        <div class="form-group" id="titlePos">
+          <label id="label-4" for="profile-4">Title/Position</label>
+          <input data-profile="position" id="profile-4" type="text" class="form-control" name="4" size="200">
+        </div>
+        <div class="form-group">
+          <label id="label-5" for="profile-5">First Name</label>
+          <input data-profile="firstName" id="profile-5" type="text" class="form-control" name="5" size="200" required>
+        </div>
+        <div class="form-group">
+          <label id="label-6" for="profile-6">Last Name</label>
+          <input data-profile="lastName" id="profile-6" type="text" class="form-control" name="6" size="200" required>
+        </div>
+        <div class="form-group">
+          <label id="label-7" for="profile-7">Address</label>
+          <input data-profile="address" id="profile-7" type="text" class="form-control" name="7" size="500">
+        </div>
+        <div class="form-group">
+          <label id="label-8" for="profile-8">City</label>
+          <input data-profile="city" id="profile-8" type="text" class="form-control" name="8" size="100">
+        </div>
+        <div class="form-group">
+          <label id="label-9" for="profile-9">Country</label>
+          <select data-profile="country" id="profile-9" class="form-control" name="9"></select>
+        </div>
+        <div class="form-group">
+          <label id="label-10" for="profile-0">Province/State</label>
+          <select data-profile="subdivision" id="profile-10" class="form-control" name="10"></select>
+        </div>
+        <div class="form-group">
+          <label id="label-11" for="profile-1">Postal Code/Zip</label>
+          <input data-profile="postal" id="profile-11" class="form-control" type="text" name="11" size="10">
+        </div>
+        <div class="form-group">
+          <label id="label-12" for="profile-2">Telephone</label>
+          <input data-profile="phone" id="profile-12" type="tel" class="form-control" name="12" size="20">
+        </div>
+        <div class="form-group">
+          <label id="label-13" for="profile-3">Email Address</label>
+          <input data-profile="email" id="profile-13" type="email" name="13" size="200" required class="form-control">
+        </div>
+        <button type="button" id="btnSaveProfile" class="btn btn-primary btn-save">Save Profile</button>
+      </form>
+      <br />
+    </section>
+
+    <!--TILE MENU-->
+    <section data-role="page" id="main-page" class="container-fluid inactive-page">
+      <div class="row">
+        <div class="col-xs-6 tile disabled" id="tile-1">
+          <a href="#form-6027">
+            <p id="tileHeader_1"></p>
+          </a>
+        </div>
+        <div class="col-xs-6 tile last" id="tile-2">
+          <a href="#form-6125">
+            <p id="tileHeader_2"></p>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 tile disabled" id="tile-3">
+          <a href="#form-6500">
+            <p id="tileHeader_3"></p>
+          </a>
+        </div>
+        <div class="col-xs-6 tile last disabled" id="tile-4">
+          <a href="#form-7000">
+            <p id="tileHeader_4"></p>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 tile disabled" id="tile-5">
+          <a href="#form-7004">
+            <p id="tileHeader_5"></p>
+          </a>
+        </div>
+        <div class="col-xs-6 tile last" id="tile-6">
+          <a href="#form-7011">
+            <p id="tileHeader_6"></p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section data-role="modal" id="draftLoad">
+      <div class="modal" id="Loadraft" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title"> Drafts</h4>
+            </div>
+            <div class="modal-body">
+              <p>You have a from saved in your Drafts do you want to recover this data?.* Please note once you hit discard you will not be able to retrieve this data again.</p>
+              <button type="button" class="btn btn-info btn-sm">Discard</button>
+              <button type="button" class="btn btn-info btn-sm">Resume</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--TILE MENU-->
+    <!--FORM 1-->
+    <section data-role="page" id="form-6027" class="inactive-page"></section>
+    <!--/FORM 1-->
+    <!--FORM 2-->
+    <section data-role="page" id="form-6125" class="inactive-page"></section>
+    <!--/FORM 2-->
+    <!--FORM 3-->
+    <section data-role="page" id="form-6500" class="inactive-page"></section>
+    <!--/FORM 3-->
+    <!--FORM 4-->
+    <section data-role="page" id="form-7000" class="inactive-page"></section>
+    <!--/FORM 4-->
+    <!--FORM 5-->
+    <section data-role="page" id="form-7004" class="inactive-page"></section>
+    <!--/FORM 5-->
+    <!--FORM 6-->
+    <section data-role="page" id="form-7011" class="inactive-page"></section>
+    <!--/FORM 6-->
+    <!--	CANADIANIA PAGE-->
+    <section data-role="modal" id="Loading">
+      <div class="modal" id="Loading" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title"> Loading </h4>
+            </div>
+            <div class="modal-body">
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--   CANADIANIA PAGE-->
+    <!--SUBMISSION PAGE-->
+    <section data-role="page" id="submit-success-page" class="container-fluid inactive-page">
+      <div class="text-center">
+        <h1>Thank you for submitting your form</h1>
+        <h1> Your case number is: </h1>
+        <h1 id="caseNum"></h1>
+      </div>
+    </section>
+    <!--/SUBMISSION PAGE-->
+    <!--SUBMISSION FAIL PAGE-->
+    <section data-role="page" id="submit-fail-page" class="container-fluid inactive-page">
+      <h1>Form upload failed!</h1>
+
+      <p> Sorry for the inconvience please try uploading again later </p>
+    </section>
+    <!--SUBMISSION FAIL PAGE-->
+    <!--HISTORY PAGE-->
+    <section data-role="page" id="history-page" class="container-fluid inactive-page">
+      <div class="pageHeading">
+        <h1>History</h1>
+      </div>
+      <div id="submissionHeader" class="container">
+        <h3 id="existsAlert" class="text-center"></h3>
+      </div>
+      <ul class="list-group subList">
+        <!--<li class="list-group-item">
+            <div class="submissionName">Compliance Violation Report<br>Date: March 19th, 2017</div>
+            <div class="submissionNum">YYY-MM-DD-HH-MM-SS</div>
+        </li>-->
+      </ul>
+    </section>
+    <!--/HISTORY PAGE-->
+    <!--ABOUT PAGE-->
+    <section data-role="page" id="about-page" class="container-fluid inactive-page">
+      <div class="pageHeading">
+        <h1 id="about-title">Information</h1>
+      </div>
+      <!--TODO: BILINGUAL-->
+      <div class="text-justify infoBody">
+        <h4 id="about-header"></h4>
+        <p id="about-content"></p>
+        <br />
+      </div>
+    </section>
+    <!--/ABOUT PAGE-->
+
+  </main>
+  <!--/MAIN PAGE-->
+</body>
+
+</html>
